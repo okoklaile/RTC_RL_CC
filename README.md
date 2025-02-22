@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-To fully utilize this repository, make sure that **<u>Ubuntu 20.04</u>** is using and following tools are installed.
+To fully utilize this repository, make sure that **<u>Ubuntu 20.04</u>** is running and following tools are installed.
 
 - Docker Engine: [official installation guide](https://docs.docker.com/engine/install/)
 - Docker Compose: [official installation guide](https://docs.docker.com/compose/install/)
@@ -142,7 +142,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-**Docker Compose Plugin**: (more explanation at [here]())
+**Docker Compose Plugin**: (more explanation at [here](https://docs.docker.com/compose/install/linux/))
 
 ```shell
 sudo apt-get update
