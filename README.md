@@ -49,6 +49,15 @@ make setup
 
 For the test media, choose one and download from [this site](https://media.xiph.org/video/derf/), then name the file as test.y4m and move into `share/input/testmedia`
 
+Now we can install Containernet by doing the following steps, more details can be found at [here](https://github.com/containernet/containernet?tab=readme-ov-file#installation):
+```shell
+sudo ansible-playbook -i "localhost," -c local modules/containernet/ansible/install.yml
+python -m venv modules/containernet/venv
+source modules/containernet/venv/bin/activate
+pip install modules/containernet/
+deactivate
+```
+
 ### Demonstration
 
 To quickly demonstrate the functionality of trace-driven simulation, run:
@@ -89,9 +98,9 @@ docker compose up
 ### Topology-based simulation
 In addtion to the trace-driven simulation, we further construct two kind of topologies for the tests, which are dumbbell and parking-lot, respectively. They are formed using [Containernet](https://containernet.github.io/), a extension of the [Mininet](https://mininet.org/), with traditional nodes being replaced by Docker containers. The details of both topologies' defination can be found at [former work's repository](https://github.com/Zhiming-Huang/luc).
 
-Suppose containernet has been installed following [bare-metal option](https://github.com/containernet/containernet?tab=readme-ov-file#option-1-bare-metal-installation), you may first start the virtual Python environment in which containernet was maintained:
+Suppose Containernet has been installed as described above, you may first start the virtual Python environment in which containernet was maintained:
 ```shell
-source path/to/your/venv/bin/activate
+source modules/containernet/venv/bin/activate
 ```
 then run either simulation by:
 - ```shell
@@ -100,6 +109,11 @@ then run either simulation by:
 - ```shell
   sudo -E env PATH=$PATH python topo/topo_parkinglot.py
   ```
+
+To simply visualize the results, you may `deactivate` the `venv` virtual environment first, and then run:
+```shell
+python topo/visual.py
+```
 
 ## Installation Guide
 

@@ -4,7 +4,8 @@
 	url = https://github.com/OpenNetLab/AlphaRTC.git
 	ignore = dirty
 
-[submodule "containernet"]
+
+[submodule "modules/containernet"]
 	path = modules/containernet
 	url = https://github.com/containernet/containernet.git
 	ignore = dirty
