@@ -3,8 +3,6 @@ import os
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
 
-import matplotlib.pyplot as plt
-
 from utils.ssim import calculate_video_ssim
 from utils.draw import draw_goodput
 from evaluate.utils.net_info import NetInfo

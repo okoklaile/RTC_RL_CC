@@ -8,10 +8,14 @@ from evaluate.eval_network import init_network_argparse, get_network_score
 from utils.ssim import calculate_video_ssim
 
 import numpy as np
-import matplotlib.pyplot as plt
 import argparse
 import json
 from itertools import cycle
+
+import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
 
 def draw_goodput(time_nbytes_list: list, label_list: list, save_file_name="goodput", min_gap=500, duration=60):
     plt.figure()
@@ -152,38 +156,5 @@ def draw_combined_scores_from_json_traces(json_file):
 
 
 if __name__ == "__main__":
-    ########################################################
-
-    # net_parser1 = NetInfo('share/output/trace/webrtc_HRCC.log')
-    # net_parser2 = NetInfo('share/output/trace/webrtc_dummy.log')
-    # parse_result1 = net_parser1.parse_net_log()
-    # parse_result2 = net_parser2.parse_net_log()
-
-    # net_eval_extension = NetEvalMethodExtension()
-    # result1 = net_eval_extension.eval(net_parser1)
-    # result2 = net_eval_extension.eval(net_parser2)
-    # print(f'self inflicted delay: ', result1[1])
-    # print(f'95 quantile one-way delay: ', result1[2])
-    # print(f'good put: ', result1[3])
-    # print(f'loss rate: ', result1[4])
-    # print('*'*30)
-    # print(f'self inflicted delay: ', result2[1])
-    # print(f'95 quantile one-way delay: ', result2[2])
-    # print(f'good put: ', result2[3])
-    # print(f'loss rate: ', result2[4])
-
-    # draw_goodput([result1[0], result2[0]], ["HRCC", "dummy"], "hrcc_dummy_put_taxi.png")
-
-    ########################################################
-
-    # draw_score("trace", "score_trace_taxi.png")
-
-    ########################################################
-
-    # draw_metrics_from_json("share/output/trace/demo_results.json", "HRCC", "delay1", "goodput", ("Self-inflicted delay (ms)", "Goodput (Mbps)"))
-
-    # for alg in ["dummy", "HRCC", "GCC"]:
-    #     draw_metrics_from_json_traces("share/output/trace/demo_results.json", alg, "delay1", "goodput", ("Self-Inflicted Delay (ms)", "Average Goodput (Mbps)"))
-    #     draw_metrics_from_json_traces("share/output/trace/demo_results.json", alg, "delay2", "goodput", ("95th Percentile One-Way Delay (ms)", "Average Goodput (Mbps)"))
-
+    
     draw_combined_scores_from_json_traces("share/output/trace/demo_results.json")
