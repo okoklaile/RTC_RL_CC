@@ -115,5 +115,5 @@ def visual_demo(json_file):
  
 if __name__ == '__main__':
 
-    demo(1)
-    # visual_demo("share/output/trace/demo_results.json")
+    demo(3)
+    visual_demo("share/output/trace/demo_results.json")
