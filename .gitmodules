@@ -9,3 +9,8 @@
 	path = modules/containernet
 	url = https://github.com/containernet/containernet.git
 	ignore = dirty
+
+[submodule "modules/depot_tools"]
+	path = modules/depot_tools
+	url = https://chromium.googlesource.com/chromium/tools/depot_tools.git
+	ignore = dirty
