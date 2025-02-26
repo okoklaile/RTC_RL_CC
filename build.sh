@@ -2,8 +2,6 @@
 
 cd alphartc
 
-export PATH="$(pwd)/modules/depot_tools:$PATH"
-
 echo "=> Building AlphaRTC"
 
 output=$(gn --version 2>&1)
