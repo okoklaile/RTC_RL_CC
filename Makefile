@@ -1,4 +1,4 @@
-DOCKER_IMAGE = pyrtc_image
+DOCKER_IMAGE ?= pyrtc_image
 DOCKER_TAG = latest
 DOCKERFILE = dockers/Dockerfile
 CONTAINER_NAME = pyrtc_container

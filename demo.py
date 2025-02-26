@@ -93,7 +93,7 @@ def evaluate_one_scenario(trace: str, run_idx: int):
         RESULTS[trace][alg]["goodput"].append(results[idx][3])
         RESULTS[trace][alg]["loss"].append(results[idx][4])
         RESULTS[trace][alg]["network score"].append(network_score(alg))
-        RESULTS[trace][alg]["SSIM"].append(calculate_video_ssim(f"share/input/testmedia/test.y4m", f"share/output/trace/outvideo_{alg}.y4m"))
+        # RESULTS[trace][alg]["SSIM"].append(calculate_video_ssim(f"share/input/testmedia/test.y4m", f"share/output/trace/outvideo_{alg}.y4m"))
 
 def demo(times=5, file_name="share/output/trace/demo_results.json"):
     for t_idx, trace in enumerate(list(TRACE_FILES.keys())):
@@ -102,8 +102,8 @@ def demo(times=5, file_name="share/output/trace/demo_results.json"):
                 run_one_scenario(alg, trace)
             print(f"({(t_idx)*times+i+1}/{times*N_TRACES}): Finished {i+1} times of {trace} trace")
             evaluate_one_scenario(trace, i)
-    with open(file_name, "w", encoding='utf-8') as resf:
-        json.dump(RESULTS, resf)
+    # with open(file_name, "w", encoding='utf-8') as resf:
+    #     json.dump(RESULTS, resf)
 
 def visual_demo(json_file):
     for alg in ["dummy", "HRCC", "GCC"]:
@@ -115,5 +115,5 @@ def visual_demo(json_file):
  
 if __name__ == '__main__':
 
-    demo(3)
-    visual_demo("share/output/trace/demo_results.json")
+    demo(1)
+    # visual_demo("share/output/trace/demo_results.json")
