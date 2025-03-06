@@ -29,7 +29,8 @@ RUN ln -sf /usr/bin/python3.9 /usr/bin/python3 && \
     ln -sf /usr/bin/python3.9 /usr/bin/python && \
     ln -sf /usr/bin/pip3 /usr/bin/pip
 RUN pip3 install pytest numpy requests soundfile gym protobuf==3.6.1
-RUN pip3 install torch --index-url https://download.pytorch.org/whl/cpu
+RUN pip3 install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+#--index-url https://download.pytorch.org/whl/cpu
 
 RUN wget https://github.com/Netflix/vmaf/releases/download/v2.1.0/ubuntu-18.04-vmaf.zip
 RUN unzip -o ubuntu-18.04-vmaf.zip && chmod 755 vmaf && mv vmaf /usr/bin && rm ubuntu-18.04-vmaf.zip
