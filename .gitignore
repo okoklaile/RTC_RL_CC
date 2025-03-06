@@ -1,26 +1,21 @@
-__pycache__
+# Python cache files
+../__pycache__/
+*.py[cod]
+*$py.class
 
+# Project-specific files
 .gclient*
 
-share/input/testmedia/*y4m
+# Media files
+share/input/testmedia/*.y4m
 
-share/output/dumbbell/*.wav
-share/output/dumbbell/*.yuv
-share/output/dumbbell/*.y4m
-share/output/dumbbell/*.log
-share/output/dumbbell/scores*
-share/output/dumbbell/bwe*
+# Output files by type (across all scenarios)
+share/output/**/*.wav
+share/output/**/*.yuv
+share/output/**/*.y4m
+share/output/**/*.log
+share/output/**/scores*
+share/output/**/bwe*
 
-share/output/parkinglot/*.wav
-share/output/parkinglot/*.yuv
-share/output/parkinglot/*.y4m
-share/output/parkinglot/*.log
-share/output/parkinglot/scores*
-share/output/parkinglot/bwe*
-
-share/output/trace/*.wav
-share/output/trace/*.yuv
-share/output/trace/*.y4m
-share/output/trace/*.log
-share/output/trace/scores*
-share/output/trace/bwe*
+# Root logs
+share/*.log
