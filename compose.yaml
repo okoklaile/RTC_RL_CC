@@ -2,6 +2,13 @@ services:
   receiver:
     image: pyrtc_image:latest
     privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1          # 使用 1 张显卡
+              capabilities: [gpu]
     volumes:
       - ./share:/app/share
     container_name: rtc_c2
@@ -16,6 +23,13 @@ services:
   sender:
     image: pyrtc_image:latest
     privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1          # 使用 1 张显卡
+              capabilities: [gpu]
     volumes:
       - ./share:/app/share
     container_name: rtc_c1

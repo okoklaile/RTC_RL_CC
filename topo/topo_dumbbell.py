@@ -25,7 +25,7 @@ class DumbbellTopo:
         switch2 = self.net.addSwitch('s2')
 
         # Add links between switches
-        self.net.addLink(switch1, switch2, bw=10, delay='10ms', use_htb=True)
+        self.net.addLink(switch1, switch2, bw=0.1, delay='10ms', use_htb=True)
         
         # Add hosts and connect to switches
         sender1 = self.net.addDocker('h1', ip='192.168.3.101', dimage='pyrtc_image:latest', volumes=["{}/share:/app/share".format(project_root)])
@@ -33,7 +33,7 @@ class DumbbellTopo:
         receiver1 = self.net.addDocker('h3', ip='192.168.3.103', dimage='pyrtc_image:latest', volumes=["{}/share:/app/share".format(project_root)])
         receiver2 = self.net.addDocker('h4', ip='192.168.3.104', dimage='pyrtc_image:latest', volumes=["{}/share:/app/share".format(project_root)])
         
-        self.net.addLink(sender1, switch1, bw=10, delay='10ms', use_htb=True)
+        self.net.addLink(sender1, switch1, bw=10, delay='10ms', use_htb=True) #bw单位mbps
         self.net.addLink(sender2, switch1, bw=10, delay='10ms', use_htb=True)
         self.net.addLink(receiver1, switch2, bw=10, delay='10ms', use_htb=True)
         self.net.addLink(receiver2, switch2, bw=10, delay='10ms', use_htb=True)

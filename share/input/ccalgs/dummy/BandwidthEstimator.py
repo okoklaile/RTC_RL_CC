@@ -17,4 +17,4 @@ class Estimator(object):
         pass
 
     def get_estimated_bandwidth(self)->int:
-        return int(1e6)
+        return int(0.3e6)  # 10Mbps

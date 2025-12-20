@@ -9,7 +9,7 @@ import json
 parser = argparse.ArgumentParser(description="Run Sender or Receiver with specific Scenario.")
 parser.add_argument('--sender', action='store_true', help='Sender Flag')
 parser.add_argument('--case', '-C', type=str, help='Use case', 
-                    choices=['trace', 'dumbbell', 'parkinglot'], default='trace')
+                    choices=['trace', 'dumbbell', 'parkinglot', 'one2one'], default='trace')
 parser.add_argument('--index', '-I', default=None, 
                     type=int, help='Index of sender and receiver', choices=[1, 2, 3])
 parser.add_argument('--algorithm', '-A', default="dummy", 
@@ -63,7 +63,7 @@ else:
         with open(config_file, "r", encoding="utf-8") as file:
             config_data = json.load(file)
         config_data["logging"]["log_output_path"] = f"share/output/{args.case}/webrtc{args.index}_{args.algorithm}.log"
-        config_data["save_to_file"]["video"]["file_path"] = f"share/output/{args.case}/outvideo{args.index}_{args.algorithm}.yuv"
+        config_data["save_to_file"]["video"]["file_path"] = f"share/output/{args.case}/outvideo{args.index}_{args.algorithm}.y4m"
         with open(config_file, "w", encoding="utf-8") as file:
             json.dump(config_data, file)
 

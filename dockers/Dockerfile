@@ -29,11 +29,20 @@ RUN ln -sf /usr/bin/python3.9 /usr/bin/python3 && \
     ln -sf /usr/bin/python3.9 /usr/bin/python && \
     ln -sf /usr/bin/pip3 /usr/bin/pip
 RUN pip3 install pytest numpy requests soundfile gym protobuf==3.6.1
-RUN pip3 install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install opencv-python scikit-image
+#RUN pip3 install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install --no-cache-dir torch==2.3.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
 #--index-url https://download.pytorch.org/whl/cpu
 
-RUN wget https://github.com/Netflix/vmaf/releases/download/v2.1.0/ubuntu-18.04-vmaf.zip
-RUN unzip -o ubuntu-18.04-vmaf.zip && chmod 755 vmaf && mv vmaf /usr/bin && rm ubuntu-18.04-vmaf.zip
+# 假设你已经将文件下载到 dockers/downloads/ 目录下
+COPY downloads/ubuntu-18.04-vmaf.zip /tmp/
+
+# 使用本地文件进行解压和安装
+RUN cd /tmp && \
+    unzip -o ubuntu-18.04-vmaf.zip && \
+    chmod 755 vmaf && \
+    mv vmaf /usr/bin && \
+    rm ubuntu-18.04-vmaf.zip
 
 WORKDIR /app
 COPY alphartc/target/ /app/alphartc/target/

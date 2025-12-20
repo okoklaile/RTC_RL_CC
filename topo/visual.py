@@ -20,15 +20,31 @@ def visual_one_topo(max_index:int, topo: str):
     for algorithm in ["dummy", "HRCC", "GCC"]:
         net_parsers = []
         results = []
+        flow_labels = []
         net_eval_extension = NetEvalMethodExtension()
         for i in range(1, max_index+1):
-            net_parsers.append(NetInfo(f"share/output/{topo}/webrtc{i}_{algorithm}.log"))
-            net_parsers[i-1].parse_net_log()
-            results.append(net_eval_extension.eval(net_parsers[i-1]))
-        draw_goodput([r[0] for r in results], [f"Flow {i}" for i in range(1, max_index+1)], f"goodput_time_{topo}_{algorithm}", min_gap=200, duration=20)
+            log_path = f"share/output/{topo}/webrtc{i}_{algorithm}.log"
+            if not os.path.exists(log_path):
+                print(f"=> Warning: Log file not found: {log_path}, skipping...")
+                continue
+            try:
+                net_parser = NetInfo(log_path)
+                net_parsers.append(net_parser)
+                result = net_eval_extension.eval(net_parser)
+                results.append(result)
+                flow_labels.append(f"Flow {i}")
+            except Exception as e:
+                print(f"=> Warning: Failed to process {log_path}: {e}, skipping...")
+                continue
+        
+        if results:
+            draw_goodput([r[0] for r in results], flow_labels, f"goodput_time_{topo}_{algorithm}", min_gap=200, duration=20)
+        else:
+            print(f"=> No valid log files found for {topo} with algorithm {algorithm}")
     
     
 
 if __name__ == "__main__":
-    visual_one_topo(2, "dumbbell")
-    visual_one_topo(3, "parkinglot")
+    #visual_one_topo(2, "dumbbell")
+    #visual_one_topo(3, "parkinglot")
+    visual_one_topo(1, "one2one")
