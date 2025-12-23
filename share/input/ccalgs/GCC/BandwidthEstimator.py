@@ -313,48 +313,42 @@ class Estimator(object):
         return send_time_delta_list, arrival_time_delta_list, group_size_delta_list, delay_gradient_list
 
     def trendline_filter(self, delay_gradient_list, pkt_group_list):
-        """
-        趋势线滤波器 (修复版)
-        """
-        # 更新累积延迟和平滑延迟
+        '''
+        Calculate the trendline from the delay gradient of the packet 
+        '''
         for i, delay_gradient in enumerate(delay_gradient_list):
             accumulated_delay = self.acc_delay + delay_gradient
-            # 指数平滑
             smoothed_delay = kTrendlineSmoothingCoeff * self.smoothed_delay + (
                     1 - kTrendlineSmoothingCoeff) * accumulated_delay
 
             self.acc_delay = accumulated_delay
             self.smoothed_delay = smoothed_delay
 
-            # 记录时间点（相对于第一个组的完成时间）
-            if i + 1 < len(pkt_group_list): # 增加越界保护
-                arrival_time_ms = pkt_group_list[i + 1].complete_time
-                self.acc_delay_list.append(arrival_time_ms - self.first_group_complete_time)
-                self.smoothed_delay_list.append(smoothed_delay)
+            arrival_time_ms = pkt_group_list[i + 1].complete_time
+            self.acc_delay_list.append(arrival_time_ms - self.first_group_complete_time)
 
-            # 保持窗口大小
+            self.smoothed_delay_list.append(smoothed_delay)
             if len(self.acc_delay_list) > kTrendlineWindowSize:
                 self.acc_delay_list.popleft()
                 self.smoothed_delay_list.popleft()
-        
-        # 当窗口满时，进行线性回归计算趋势线斜率
         if len(self.acc_delay_list) == kTrendlineWindowSize:
             avg_acc_delay = sum(self.acc_delay_list) / len(self.acc_delay_list)
             avg_smoothed_delay = sum(self.smoothed_delay_list) / len(self.smoothed_delay_list)
 
-            numerator = 0  # 协方差
-            denominator = 0  # 方差
+            numerator = 0
+            denominator = 0
             for i in range(kTrendlineWindowSize):
                 numerator += (self.acc_delay_list[i] - avg_acc_delay) * (
                         self.smoothed_delay_list[i] - avg_smoothed_delay)
                 denominator += (self.acc_delay_list[i] - avg_acc_delay) * (self.acc_delay_list[i] - avg_acc_delay)
 
-            # 线性回归斜率 = 协方差/方差
             trendline = numerator / (denominator + 1e-05)
         else:
-            # 样本不足，无法计算趋势线，直接返回None，但保留数据等待下一次累积
             trendline = None
-            
+            self.acc_delay_list.clear()
+            self.smoothed_delay_list.clear()
+            self.acc_delay = 0
+            self.smoothed_delay = 0
         return trendline
 
     def overuse_detector(self, trendline, ts_delta):

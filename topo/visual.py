@@ -45,6 +45,6 @@ def visual_one_topo(max_index:int, topo: str):
     
 
 if __name__ == "__main__":
-    #visual_one_topo(2, "dumbbell")
+    visual_one_topo(2, "dumbbell")
     #visual_one_topo(3, "parkinglot")
-    visual_one_topo(1, "one2one")
+    #visual_one_topo(1, "one2one")

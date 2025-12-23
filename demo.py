@@ -19,7 +19,11 @@ TRACE_FILES = {
     '30mbps': ["med_30mbps.trace", "med_30mbps.trace"]
 }
 RESULTS = defaultdict(dict) # key: trace, value: dict of results
-ALGORITHMS = ["dummy", "HRCC", "GCC"]
+ALGORITHMS = [
+            "dummy", 
+            "HRCC", 
+            "GCC"
+            ] 
 N_TRACES = len(TRACE_FILES)
 N_ALGORITHMS = len(ALGORITHMS)
 
@@ -65,21 +69,26 @@ def evaluate_one_scenario(trace: str, run_idx: int):
         network_args.dst_network_log = f"share/output/trace/webrtc_{algorithm}.log"
         return get_network_score(network_args)
 
-    net_parser1 = NetInfo('share/output/trace/webrtc_dummy.log')
-    net_parser2 = NetInfo('share/output/trace/webrtc_HRCC.log')
-    net_parser3 = NetInfo('share/output/trace/webrtc_GCC.log')
-    net_parser1.parse_net_log()
-    net_parser2.parse_net_log()
-    net_parser3.parse_net_log()
+    # 动态创建 NetInfo 对象并解析日志
+    net_parsers = []
+    for alg in ALGORITHMS:
+        net_parser = NetInfo(f'share/output/trace/webrtc_{alg}.log')
+        net_parser.parse_net_log()
+        net_parsers.append(net_parser)
 
+    # 动态评估结果
     net_eval_extension = NetEvalMethodExtension()
-    result1 = net_eval_extension.eval(net_parser1)
-    result2 = net_eval_extension.eval(net_parser2)
-    result3 = net_eval_extension.eval(net_parser3)
-    results = [result1, result2, result3]
+    results = [net_eval_extension.eval(parser) for parser in net_parsers]
+    
+    # 创建算法标签（首字母大写）
+    alg_labels = [alg.capitalize() if alg.lower() == alg else alg for alg in ALGORITHMS]
+    
     if run_idx == 0:
-        draw_goodput([result1[0], result2[0], result3[0]], ["Dummy", "HRCC", "GCC"], f"goodput_time_{trace}")
-        for alg in ["dummy", "HRCC", "GCC"]:
+        # 提取 goodput 数据并绘图
+        goodput_data = [result[0] for result in results]
+        draw_goodput(goodput_data, alg_labels, f"goodput_time_{trace}")
+        # 初始化结果字典
+        for alg in ALGORITHMS:
             RESULTS[trace][alg] = defaultdict(dict)
             RESULTS[trace][alg]["delay1"] = []
             RESULTS[trace][alg]["delay2"] = []
@@ -87,7 +96,9 @@ def evaluate_one_scenario(trace: str, run_idx: int):
             RESULTS[trace][alg]["loss"] = []
             RESULTS[trace][alg]["network score"] = []
             RESULTS[trace][alg]["SSIM"] = []
-    for idx, alg in enumerate(["dummy", "HRCC", "GCC"]):
+    
+    # 追加结果
+    for idx, alg in enumerate(ALGORITHMS):
         RESULTS[trace][alg]["delay1"].append(results[idx][1])
         RESULTS[trace][alg]["delay2"].append(results[idx][2])
         RESULTS[trace][alg]["goodput"].append(results[idx][3])
@@ -106,7 +117,7 @@ def demo(times=5, file_name="share/output/trace/demo_results.json"):
         json.dump(RESULTS, resf)
 
 def visual_demo(json_file):
-    for alg in ["dummy", "HRCC", "GCC"]:
+    for alg in ALGORITHMS:
         draw_metrics_from_json_traces(json_file, alg, "delay1", "goodput", ("Self-Inflicted Delay (ms)", "Average Goodput (Mbps)"))
         draw_metrics_from_json_traces(json_file, alg, "delay2", "goodput", ("95th Percentile One-Way Delay (ms)", "Average Goodput (Mbps)"))
 
@@ -115,5 +126,5 @@ def visual_demo(json_file):
  
 if __name__ == '__main__':
 
-    demo(3)
-    visual_demo("share/output/trace/demo_results.json")
+    demo(1)
+    #visual_demo("share/output/trace/demo_results.json")

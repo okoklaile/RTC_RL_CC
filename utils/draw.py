@@ -126,9 +126,12 @@ def draw_combined_scores_from_json_traces(json_file):
         data = json.load(file)
 
     traces = list(data.keys())
-    algorithms = ['dummy', 'HRCC', 'GCC']
-    labels = ['Dummy', 'HRCC', 'GCC']
+    # 动态获取所有算法（从第一个 trace 中获取）
+    algorithms = list(data[traces[0]].keys()) if traces else []
+    # 创建标签（首字母大写）
+    labels = [alg.capitalize() if alg.lower() == alg else alg for alg in algorithms]
     bar_width = 0.2
+    total_bar_width = bar_width * len(algorithms) if algorithms else bar_width
 
     heights = {algo: [] for algo in algorithms}
     for trace_name in traces:
@@ -143,13 +146,13 @@ def draw_combined_scores_from_json_traces(json_file):
     plt.figure(figsize=(12, 6))
 
     for i, (algo, label) in enumerate(zip(algorithms, labels)):
-        plt.bar(x + i * (bar_width), heights[algo], width=bar_width, label=label)
+        plt.bar(x + i * bar_width, heights[algo], width=bar_width, label=label)
 
-    plt.xticks(x + bar_width, traces, fontsize=20)
+    plt.xticks(x + total_bar_width / 2 - bar_width / 2, traces, fontsize=20)
     plt.xlabel('Trace', fontsize=24)
     plt.ylabel('Combined Score', fontsize=24)
     plt.ylim(0, 100)
-    plt.legend(loc="upper center", fontsize=24, ncol=3)
+    plt.legend(loc="upper center", fontsize=24, ncol=len(algorithms))
     plt.grid(True)
 
     plt.savefig(f"share/output/figures/trace_scores.pdf", bbox_inches='tight', format='pdf')

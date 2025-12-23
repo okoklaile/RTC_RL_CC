@@ -220,9 +220,9 @@ class GCCEstimator(object):
         min_sequence_number, max_sequence_number = 0, 0
         if len(self.packets_list) == 0:  # 没有收到数据包
             return -1
-        # 统计有效数据包（payload_type == 126）
+        # 统计有效数据包（payload_type == 125）
         for i in range(len(self.packets_list)):
-            if self.packets_list[i].payload_type == 126:
+            if self.packets_list[i].payload_type == 125:
                 if not flag:
                     min_sequence_number = self.packets_list[i].sequence_number
                     max_sequence_number = self.packets_list[i].sequence_number
@@ -313,53 +313,37 @@ class GCCEstimator(object):
         return send_time_delta_list, arrival_time_delta_list, group_size_delta_list, delay_gradient_list
 
     def trendline_filter(self, delay_gradient_list, pkt_group_list):
-        """
-        趋势线滤波器
-        对延迟梯度进行线性回归分析，得到延迟变化的趋势
-        使用滑动窗口和指数平滑来减少噪声影响
-        
-        Args:
-            delay_gradient_list: 延迟梯度列表
-            pkt_group_list: 数据包组列表
-        Returns:
-            trendline: 趋势线斜率，表示延迟增长速率；None表示样本不足
-        """
-        # 更新累积延迟和平滑延迟
+        '''
+        Calculate the trendline from the delay gradient of the packet 
+        '''
         for i, delay_gradient in enumerate(delay_gradient_list):
             accumulated_delay = self.acc_delay + delay_gradient
-            # 指数平滑
             smoothed_delay = kTrendlineSmoothingCoeff * self.smoothed_delay + (
                     1 - kTrendlineSmoothingCoeff) * accumulated_delay
 
             self.acc_delay = accumulated_delay
             self.smoothed_delay = smoothed_delay
 
-            # 记录时间点（相对于第一个组的完成时间）
             arrival_time_ms = pkt_group_list[i + 1].complete_time
             self.acc_delay_list.append(arrival_time_ms - self.first_group_complete_time)
 
             self.smoothed_delay_list.append(smoothed_delay)
-            # 保持窗口大小
             if len(self.acc_delay_list) > kTrendlineWindowSize:
                 self.acc_delay_list.popleft()
                 self.smoothed_delay_list.popleft()
-        
-        # 当窗口满时，进行线性回归计算趋势线斜率
         if len(self.acc_delay_list) == kTrendlineWindowSize:
             avg_acc_delay = sum(self.acc_delay_list) / len(self.acc_delay_list)
             avg_smoothed_delay = sum(self.smoothed_delay_list) / len(self.smoothed_delay_list)
 
-            numerator = 0  # 协方差
-            denominator = 0  # 方差
+            numerator = 0
+            denominator = 0
             for i in range(kTrendlineWindowSize):
                 numerator += (self.acc_delay_list[i] - avg_acc_delay) * (
                         self.smoothed_delay_list[i] - avg_smoothed_delay)
                 denominator += (self.acc_delay_list[i] - avg_acc_delay) * (self.acc_delay_list[i] - avg_acc_delay)
 
-            # 线性回归斜率 = 协方差/方差
             trendline = numerator / (denominator + 1e-05)
         else:
-            # 样本不足，无法计算趋势线，重置状态
             trendline = None
             self.acc_delay_list.clear()
             self.smoothed_delay_list.clear()
