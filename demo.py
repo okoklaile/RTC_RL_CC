@@ -12,17 +12,22 @@ from evaluate.eval_network import init_network_argparse, get_network_score
 from utils.draw import *
 
 TRACE_FILES = {
-    'att16': ["ATT-LTE-driving-2016.down", "ATT-LTE-driving-2016.down"],
-    'taxi': ["trace-1552767958-taxi1", "trace-1552767958-taxi1"],
-    'verizon': ["Verizon-LTE-driving.down", "Verizon-LTE-driving.down"],
-    'tmobile': ["TMobile-LTE-driving.down", "TMobile-LTE-driving.down"],
+    #'att16': ["ATT-LTE-driving-2016.down", "ATT-LTE-driving-2016.down"],
+    #'taxi': ["trace-1552767958-taxi1", "trace-1552767958-taxi1"],
+    #'verizon': ["Verizon-LTE-driving.down", "Verizon-LTE-driving.down"],
+    #'tmobile': ["TMobile-LTE-driving.down", "TMobile-LTE-driving.down"],
     '30mbps': ["med_30mbps.trace", "med_30mbps.trace"]
 }
 RESULTS = defaultdict(dict) # key: trace, value: dict of results
 ALGORITHMS = [
-            "dummy", 
+            #"dummy", 
             "HRCC", 
-            "GCC"
+            "GCC",
+            "Cubic",
+            "PCC",
+            "Copa",
+            "Copa+",
+            "BBR",
             ] 
 N_TRACES = len(TRACE_FILES)
 N_ALGORITHMS = len(ALGORITHMS)
@@ -55,11 +60,12 @@ def run_one_scenario(algorithm: str, trace: str):
 
     command = ["docker", "compose", "up"]
     print(f"Executing: {command} with algorithm: {algorithm}")
-    subprocess.run(command, check=True)
+    # 重定向输出到 /dev/null 以抑制 webrtc 日志输出
+    subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(3)
     command = ["docker", "compose", "down"]
     print(f"Executing: {command} with algorithm: {algorithm}")
-    subprocess.run(command, check=True)
+    subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
 def evaluate_one_scenario(trace: str, run_idx: int):

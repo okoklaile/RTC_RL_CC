@@ -44,8 +44,12 @@ def visual_trace_result(algorithm="dummy"):
 
 if __name__ == "__main__":
     # 如果您修改了 compose.yaml 中的 ARG_A 环境变量，请修改这里的算法名
-    target_algo = "dummy" 
-    target_algo = "GCC"
-    target_algo = "HRCC"
-    
+    #target_algo = "dummy" 
+    #target_algo = "GCC"
+    #target_algo = "HRCC"
+    #target_algo = "Cubic"
+    #target_algo = "PCC"
+    #target_algo = "Copa"
+    #target_algo = "Copa+"
+    target_algo = "BBR"
     visual_trace_result(target_algo)
