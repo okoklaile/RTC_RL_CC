@@ -1,5 +1,7 @@
 import collections
 import math
+import json
+import os
 
 # BBR Constants
 kProbeRTTInterval = 10000     # 10s
@@ -23,7 +25,22 @@ class BBRState:
     PROBE_RTT = 3
 
 class Estimator(object):
-    def __init__(self):
+    def __init__(self, enable_data_collection: bool = False, output_dir: str = "share/output/imitation_data"):
+        """
+        初始化 BBR 估计器
+        
+        Args:
+            enable_data_collection: 是否启用数据收集（用于模仿学习）
+            output_dir: 数据输出目录
+        """
+        self.enable_data_collection = enable_data_collection
+        self.output_dir = output_dir
+        self.data_records = []
+        self.call_count = 0
+        
+        if self.enable_data_collection:
+            os.makedirs(output_dir, exist_ok=True)
+        
         self.reset()
 
     def reset(self):
@@ -75,7 +92,10 @@ class Estimator(object):
 
     def get_estimated_bandwidth(self) -> int:
         if not self.packets_list:
-            return int(self.current_bitrate)
+            bandwidth = int(self.current_bitrate)
+            if self.enable_data_collection:
+                self._save_data_record({}, bandwidth)
+            return bandwidth
 
         # 1. 更新测量模型 (仅使用视频包)
         self.update_model_and_stats()
@@ -97,9 +117,18 @@ class Estimator(object):
             limit = max(kMinBitrate, self.btl_bw * 0.5)
             self.current_bitrate = min(self.current_bitrate, limit)
 
+        bandwidth = int(self.current_bitrate)
+        
+        # 数据收集：在清空列表之前记录实际使用的数据包和特征
+        if self.enable_data_collection:
+            # 保存当前 packets_list 的副本（因为即将被清空）
+            packets_copy = list(self.packets_list)
+            features = self._extract_features_from_packets(packets_copy)
+            self._save_data_record(features, bandwidth)
+
         # 清空列表，准备下一轮
         self.packets_list = []
-        return int(self.current_bitrate)
+        return bandwidth
 
     def update_model_and_stats(self):
         # 过滤视频包 (Payload 126)
@@ -214,6 +243,193 @@ class Estimator(object):
             self.cycle_idx = (self.cycle_idx + 1) % len(kPacingGainCycle)
             self.cycle_start_time = self.now_ms
             self.pacing_gain = kPacingGainCycle[self.cycle_idx]
+    
+    def _extract_features_from_packets(self, packets_list) -> dict:
+        """
+        从数据包列表中提取特征
+        这些特征与算法内部使用的特征一致
+        
+        Args:
+            packets_list: 数据包列表（PacketInfo 对象列表）
+        
+        Returns:
+            特征字典
+        """
+        if not packets_list:
+            return self._get_default_features()
+        
+        # 过滤视频包
+        video_packets = [p for p in packets_list if p.payload_type == 125]
+        
+        # 1. 数据包统计
+        total_packets = len(packets_list)
+        video_packets_count = len(video_packets)
+        total_bytes = sum(p.size for p in packets_list)
+        video_bytes = sum(p.size for p in video_packets)
+        
+        # 2. RTT 统计
+        # 计算数据包 RTT（receive_timestamp - send_timestamp）
+        rtt_list = []
+        for pkt in video_packets:
+            if pkt.receive_timestamp > 0 and pkt.send_timestamp > 0:
+                rtt = pkt.receive_timestamp - pkt.send_timestamp
+                if rtt > 0:
+                    rtt_list.append(rtt)
+        
+        min_rtt = min(rtt_list) if rtt_list else 0
+        avg_rtt = sum(rtt_list) / len(rtt_list) if rtt_list else 0
+        max_rtt = max(rtt_list) if rtt_list else 0
+        
+        # 如果没有 RTT 数据，使用数据包到达间隔作为近似
+        if min_rtt == 0 and len(video_packets) >= 2:
+            arrival_times = [p.receive_timestamp for p in video_packets]
+            inter_arrival_times = [arrival_times[i] - arrival_times[i-1] 
+                                  for i in range(1, len(arrival_times))]
+            if inter_arrival_times:
+                min_rtt = min(inter_arrival_times)
+                avg_rtt = sum(inter_arrival_times) / len(inter_arrival_times)
+                max_rtt = max(inter_arrival_times)
+        
+        # 4. 时间窗口和吞吐量
+        if len(packets_list) >= 2:
+            first_pkt = packets_list[0]
+            last_pkt = packets_list[-1]
+            time_window = last_pkt.receive_timestamp - first_pkt.receive_timestamp
+            if time_window > 0:
+                throughput = (total_bytes * 8 * 1000) / time_window  # bps
+            else:
+                throughput = 0
+        else:
+            time_window = 0
+            throughput = 0
+        
+        # 5. 延迟梯度（到达间隔变化率）
+        delay_gradient = 0.0
+        if len(video_packets) >= 4 and time_window > 0:
+            arrival_times = [p.receive_timestamp for p in video_packets]
+            if len(arrival_times) >= 4:
+                inter_arrival_times = [arrival_times[i] - arrival_times[i-1] 
+                                      for i in range(1, len(arrival_times))]
+                mid = len(inter_arrival_times) // 2
+                recent_avg = sum(inter_arrival_times[mid:]) / len(inter_arrival_times[mid:]) if inter_arrival_times[mid:] else 0
+                prev_avg = sum(inter_arrival_times[:mid]) / len(inter_arrival_times[:mid]) if inter_arrival_times[:mid] else 0
+                if time_window > 0:
+                    delay_gradient = (recent_avg - prev_avg) / (time_window / 1000.0)  # ms/s
+        
+        # 6. 序列号分析（检测丢包）
+        seq_nums = [p.sequence_number for p in video_packets if p.sequence_number is not None]
+        packet_loss_rate = 0.0
+        if len(seq_nums) >= 2:
+            min_seq = min(seq_nums)
+            max_seq = max(seq_nums)
+            expected_packets = max_seq - min_seq + 1
+            if expected_packets > 0:
+                packet_loss_rate = 1.0 - (len(seq_nums) / expected_packets)
+                packet_loss_rate = max(0.0, min(1.0, packet_loss_rate))
+        
+        # 7. 返回通用特征（适用于所有算法）
+        return {
+            # 数据包统计
+            'total_packets': total_packets,
+            'video_packets': video_packets_count,
+            'total_bytes': total_bytes,
+            'video_bytes': video_bytes,
+            
+            # RTT/延迟统计
+            'min_rtt_ms': min_rtt,
+            'avg_rtt_ms': avg_rtt,
+            'max_rtt_ms': max_rtt,
+            
+            # 丢包率
+            'loss_rate': packet_loss_rate,
+            
+            # 时间窗口和吞吐量
+            'time_window_ms': time_window,
+            'throughput_bps': throughput,
+            
+            # 延迟梯度
+            'delay_gradient_ms_per_s': delay_gradient,
+            
+            # 当前带宽（通用特征）
+            'current_bandwidth_bps': self.current_bitrate,
+        }
+    
+    def _get_default_features(self) -> dict:
+        """返回默认特征（当没有数据包时）"""
+        return {
+            'total_packets': 0,
+            'video_packets': 0,
+            'total_bytes': 0,
+            'video_bytes': 0,
+            'min_rtt_ms': 0,
+            'avg_rtt_ms': 0,
+            'max_rtt_ms': 0,
+            'loss_rate': 0.0,
+            'time_window_ms': 0,
+            'throughput_bps': 0,
+            'delay_gradient_ms_per_s': 0.0,
+            'current_bandwidth_bps': self.current_bitrate,
+        }
+    
+    def _save_data_record(self, features: dict, bandwidth: int):
+        """保存一条数据记录"""
+        record = {
+            "timestamp": self.call_count,
+            "input_features": features,
+            "output_bandwidth": bandwidth,
+            "algorithm": "BBR"
+        }
+        self.data_records.append(record)
+        self.call_count += 1
+    
+    def save_data(self, filename: str = None, auto_increment: bool = True):
+        """
+        保存收集的数据到 JSON 文件
+        
+        Args:
+            filename: 输出文件名，如果为 None 则使用默认名称
+            auto_increment: 如果文件已存在，是否自动递增文件名
+        
+        Returns:
+            保存的文件路径，如果未启用数据收集则返回 None
+        """
+        if not self.enable_data_collection or not self.data_records:
+            return None
+        
+        if filename is None:
+            filename = "BBR_imitation_data.json"
+        
+        filepath = os.path.join(self.output_dir, filename)
+        
+        # 自动递增文件名
+        if auto_increment and os.path.exists(filepath):
+            base_name, ext = os.path.splitext(filename)
+            counter = 1
+            while os.path.exists(filepath):
+                filename = f"{base_name}_{counter}{ext}"
+                filepath = os.path.join(self.output_dir, filename)
+                counter += 1
+        
+        output_data = {
+            "algorithm": "BBR",
+            "total_records": len(self.data_records),
+            "data": self.data_records
+        }
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, indent=2, ensure_ascii=False)
+        
+        print(f"已保存 {len(self.data_records)} 条数据到 {filepath}")
+        return filepath
+    
+    def __del__(self):
+        """析构函数：自动保存数据"""
+        if hasattr(self, 'enable_data_collection') and self.enable_data_collection:
+            if hasattr(self, 'data_records') and len(self.data_records) > 0:
+                try:
+                    self.save_data(auto_increment=True)
+                except Exception:
+                    pass
 
 
 class WindowedMaxFilter:
