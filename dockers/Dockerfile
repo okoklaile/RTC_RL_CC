@@ -7,9 +7,11 @@ RUN ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && \
     echo "$TZ" > /etc/timezone && \
     apt-get update && apt-get install -y \
     python3.9 \
+    python3.9-dev \
     python3.9-distutils \
     python3-pip \
     python3-setuptools \
+    build-essential \
     wget \
     unzip \
     mahimahi \
@@ -28,11 +30,13 @@ RUN ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && \
 RUN ln -sf /usr/bin/python3.9 /usr/bin/python3 && \
     ln -sf /usr/bin/python3.9 /usr/bin/python && \
     ln -sf /usr/bin/pip3 /usr/bin/pip
-RUN pip3 install pytest numpy requests soundfile gym protobuf==3.6.1
+RUN pip3 install pytest requests soundfile gym protobuf==3.6.1
 RUN pip3 install opencv-python scikit-image
 #RUN pip3 install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
 RUN pip3 install --no-cache-dir torch==2.3.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
 #--index-url https://download.pytorch.org/whl/cpu
+# Install onnxruntime-gpu and force NumPy 1.26.4 (onnxruntime-gpu requires numpy<2)
+RUN pip install onnxruntime-gpu && pip install --force-reinstall numpy==1.26.4
 
 # 假设你已经将文件下载到 dockers/downloads/ 目录下
 COPY downloads/ubuntu-18.04-vmaf.zip /tmp/

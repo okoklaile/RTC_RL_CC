@@ -15,6 +15,7 @@ services:
     user: "user"
     environment:
       ARG_A: "${ARG_A:-dummy}"
+      FARC_DEBUG: "${FARC_DEBUG:-0}"  # 调试模式，设置为 1 启用
     command: python run.py -A "${ARG_A:-dummy}"
     networks:
       rtcnet:
@@ -38,6 +39,7 @@ services:
     user: "user"
     environment:
       ARG_A: "${ARG_A:-dummy}"
+      FARC_DEBUG: "${FARC_DEBUG:-0}"  # 调试模式，设置为 1 启用
     command: ["/bin/bash", "entrypoint_sender.sh"]
     networks:
       rtcnet:

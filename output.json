@@ -1,0 +1,5826 @@
+{
+  "algorithm": "BBR",
+  "total_records": 291,
+  "data": [
+    {
+      "timestamp": 1206355547,
+      "input_features": {
+        "total_packets": 30,
+        "video_packets": 19,
+        "total_bytes": 19866,
+        "video_bytes": 18671,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.611111111111111,
+        "max_rtt_ms": 42,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 819216.4948453609,
+        "delay_gradient_ms_per_s": -21.19129438717068,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 4266600,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206355749,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40161,
+        "video_bytes": 38996,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.410256410256411,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1639224.4897959183,
+        "delay_gradient_ms_per_s": -11.103651987110633,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 4811950,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206355959,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 42911,
+        "video_bytes": 41776,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.9743589743589745,
+        "max_rtt_ms": 35,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1769525.7731958763,
+        "delay_gradient_ms_per_s": 2.9164405860010856,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 6379360,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206356160,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 46,
+        "total_bytes": 49426,
+        "video_bytes": 49006,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 1.9555555555555555,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 88,
+        "throughput_bps": 4493272.7272727275,
+        "delay_gradient_ms_per_s": -5.030542579949693,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 9766960,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206356360,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 45,
+        "total_bytes": 49141,
+        "video_bytes": 48536,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.3636363636363638,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 104,
+        "throughput_bps": 3780076.923076923,
+        "delay_gradient_ms_per_s": -39.33566433566433,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 9766960,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206356561,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 46,
+        "total_bytes": 49532,
+        "video_bytes": 49112,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.022222222222222,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 91,
+        "throughput_bps": 4354461.538461538,
+        "delay_gradient_ms_per_s": 37.614559353689785,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 9766960,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206356763,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41083,
+        "video_bytes": 40033,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0256410256410255,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1676857.142857143,
+        "delay_gradient_ms_per_s": 2.873254564983889,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 1173460,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206356965,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41753,
+        "video_bytes": 40703,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.769230769230769,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1795827.9569892474,
+        "delay_gradient_ms_per_s": -6.28183361629881,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206357165,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41461,
+        "video_bytes": 40491,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.743589743589744,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1792908.1081081082,
+        "delay_gradient_ms_per_s": 5.064011379800853,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206357366,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45570,
+        "video_bytes": 44835,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.0714285714285716,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 129,
+        "throughput_bps": 2826046.511627907,
+        "delay_gradient_ms_per_s": 12.919896640826872,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206357568,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39871,
+        "video_bytes": 38821,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.487179487179487,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1772044.4444444445,
+        "delay_gradient_ms_per_s": 4.137426900584792,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206357768,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43925,
+        "video_bytes": 43085,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5609756097560976,
+        "max_rtt_ms": 38,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 146,
+        "throughput_bps": 2406849.315068493,
+        "delay_gradient_ms_per_s": 16.86236138290933,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206357969,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 46931,
+        "video_bytes": 46275,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.604651162790698,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 112,
+        "throughput_bps": 3352214.285714286,
+        "delay_gradient_ms_per_s": -9.39239332096475,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206358170,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 46068,
+        "video_bytes": 45438,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.8372093023255816,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 122,
+        "throughput_bps": 3020852.4590163934,
+        "delay_gradient_ms_per_s": 8.072528564331844,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206358371,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 46856,
+        "video_bytes": 46226,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.6511627906976742,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 114,
+        "throughput_bps": 3288140.350877193,
+        "delay_gradient_ms_per_s": -10.879471405787195,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206358572,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 47211,
+        "video_bytes": 46578,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.6744186046511627,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 115,
+        "throughput_bps": 3284243.4782608696,
+        "delay_gradient_ms_per_s": -30.623000188217578,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206358779,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 38750,
+        "video_bytes": 37700,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 195,
+        "throughput_bps": 1589743.5897435897,
+        "delay_gradient_ms_per_s": -1.5789473684210547,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206358981,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41311,
+        "video_bytes": 40504,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4878048780487805,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 149,
+        "throughput_bps": 2218040.2684563757,
+        "delay_gradient_ms_per_s": 8.357302652604664,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206359187,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 42915,
+        "video_bytes": 41849,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.333333333333333,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1907333.3333333333,
+        "delay_gradient_ms_per_s": -3.2309941520467858,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206359389,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45518,
+        "video_bytes": 44755,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.0952380952380953,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 135,
+        "throughput_bps": 2697362.962962963,
+        "delay_gradient_ms_per_s": -21.16402116402116,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206359595,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45188,
+        "video_bytes": 44533,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5238095238095237,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2442594.5945945946,
+        "delay_gradient_ms_per_s": -14.800514800514799,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206359807,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45135,
+        "video_bytes": 44435,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.0476190476190474,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 142,
+        "throughput_bps": 2542816.9014084507,
+        "delay_gradient_ms_per_s": 9.38967136150235,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206360008,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44819,
+        "video_bytes": 43967,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8536585365853657,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 158,
+        "throughput_bps": 2269316.4556962023,
+        "delay_gradient_ms_per_s": -16.01868595539482,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206360216,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44487,
+        "video_bytes": 43795,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.619047619047619,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 152,
+        "throughput_bps": 2341421.052631579,
+        "delay_gradient_ms_per_s": -8.771929824561402,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206360423,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43955,
+        "video_bytes": 43108,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7804878048780486,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 155,
+        "throughput_bps": 2268645.1612903224,
+        "delay_gradient_ms_per_s": -19.139784946236556,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206360624,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43873,
+        "video_bytes": 42928,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.725,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2140146.3414634145,
+        "delay_gradient_ms_per_s": -4.5731707317073145,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206360845,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41503,
+        "video_bytes": 40453,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.717948717948718,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1804478.2608695652,
+        "delay_gradient_ms_per_s": -4.662471395881008,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206361045,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 42123,
+        "video_bytes": 40993,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.230769230769231,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1831434.7826086956,
+        "delay_gradient_ms_per_s": -13.729977116704806,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206361250,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41885,
+        "video_bytes": 40940,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.475,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 179,
+        "throughput_bps": 1871955.30726257,
+        "delay_gradient_ms_per_s": -1.9553072625698356,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206361451,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41803,
+        "video_bytes": 40858,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.65,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1797978.494623656,
+        "delay_gradient_ms_per_s": 5.376344086021505,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206361661,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 42175,
+        "video_bytes": 41125,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.230769230769231,
+        "max_rtt_ms": 35,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 204,
+        "throughput_bps": 1653921.568627451,
+        "delay_gradient_ms_per_s": -6.346749226006192,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206361861,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43428,
+        "video_bytes": 42563,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.025,
+        "max_rtt_ms": 36,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 2031719.298245614,
+        "delay_gradient_ms_per_s": 7.894736842105263,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206362062,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 47451,
+        "video_bytes": 46840,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.0697674418604652,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 132,
+        "throughput_bps": 2875818.1818181816,
+        "delay_gradient_ms_per_s": -3.902662993572084,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206362264,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 40749,
+        "video_bytes": 39575,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.078947368421052,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 199,
+        "throughput_bps": 1638150.7537688443,
+        "delay_gradient_ms_per_s": 5.025125628140703,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206362465,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43949,
+        "video_bytes": 43071,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.2,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1975235.9550561798,
+        "delay_gradient_ms_per_s": -2.247191011235957,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206362666,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45063,
+        "video_bytes": 44272,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.1904761904761907,
+        "max_rtt_ms": 36,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 134,
+        "throughput_bps": 2690328.3582089553,
+        "delay_gradient_ms_per_s": 11.37171286425018,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206362868,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45615,
+        "video_bytes": 44697,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4634146341463414,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 142,
+        "throughput_bps": 2569859.1549295774,
+        "delay_gradient_ms_per_s": 16.683433936955062,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206363087,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40957,
+        "video_bytes": 39987,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.512820512820513,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1810254.1436464088,
+        "delay_gradient_ms_per_s": 3.823785984297759,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206363302,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43566,
+        "video_bytes": 42646,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.1951219512195124,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 141,
+        "throughput_bps": 2471829.787234043,
+        "delay_gradient_ms_per_s": 4.086457277946641,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206363518,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44211,
+        "video_bytes": 43325,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975609756097561,
+        "max_rtt_ms": 34,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 163,
+        "throughput_bps": 2169865.030674847,
+        "delay_gradient_ms_per_s": 4.498977505112472,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206363718,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41235,
+        "video_bytes": 40475,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.902439024390244,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 160,
+        "throughput_bps": 2061750.0,
+        "delay_gradient_ms_per_s": -8.51190476190476,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206363925,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43241,
+        "video_bytes": 42267,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.1,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1921822.2222222222,
+        "delay_gradient_ms_per_s": -0.5555555555555586,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206364128,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42445,
+        "video_bytes": 41479,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.175,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 167,
+        "throughput_bps": 2033293.4131736527,
+        "delay_gradient_ms_per_s": -8.083832335329339,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206364329,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45138,
+        "video_bytes": 44378,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.6341463414634148,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 159,
+        "throughput_bps": 2271094.3396226414,
+        "delay_gradient_ms_per_s": 4.103024857741841,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206364545,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42500,
+        "video_bytes": 41603,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.35,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 174,
+        "throughput_bps": 1954022.9885057472,
+        "delay_gradient_ms_per_s": -3.448275862068969,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206364766,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43130,
+        "video_bytes": 42154,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.225,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 2041656.8047337278,
+        "delay_gradient_ms_per_s": 5.029585798816571,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206364968,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 48616,
+        "video_bytes": 48066,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.6511627906976742,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 114,
+        "throughput_bps": 3411649.1228070175,
+        "delay_gradient_ms_per_s": 19.328624591782486,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206365168,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 43332,
+        "video_bytes": 42202,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.717948717948718,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1873816.2162162163,
+        "delay_gradient_ms_per_s": 6.458036984352771,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206365381,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 45910,
+        "video_bytes": 45310,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.2093023255813953,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 138,
+        "throughput_bps": 2661449.275362319,
+        "delay_gradient_ms_per_s": 21.174477696216826,
+        "current_bandwidth_bps": 3385428.0
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206365586,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44541,
+        "video_bytes": 43816,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.2857142857142856,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 138,
+        "throughput_bps": 2582086.9565217393,
+        "delay_gradient_ms_per_s": -2.760524499654934,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206365806,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45513,
+        "video_bytes": 44616,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5853658536585367,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 147,
+        "throughput_bps": 2476897.9591836734,
+        "delay_gradient_ms_per_s": -13.475866537091026,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206366024,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45018,
+        "video_bytes": 44104,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5853658536585367,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 147,
+        "throughput_bps": 2449959.1836734693,
+        "delay_gradient_ms_per_s": -16.796242306446388,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 3385430,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206366226,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44088,
+        "video_bytes": 43318,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.902439024390244,
+        "max_rtt_ms": 24,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 160,
+        "throughput_bps": 2204400.0,
+        "delay_gradient_ms_per_s": -6.071428571428575,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2861280,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206366444,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41525,
+        "video_bytes": 40500,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.3,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 172,
+        "throughput_bps": 1931395.3488372094,
+        "delay_gradient_ms_per_s": -5.813953488372094,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2861280,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206366645,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43153,
+        "video_bytes": 42187,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.35,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 176,
+        "throughput_bps": 1961500.0,
+        "delay_gradient_ms_per_s": -2.27272727272727,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2801000,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206366851,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 42130,
+        "video_bytes": 41160,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.923076923076923,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 192,
+        "throughput_bps": 1755416.6666666667,
+        "delay_gradient_ms_per_s": -9.333881578947368,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2801000,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206367060,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41613,
+        "video_bytes": 40483,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.384615384615385,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 182,
+        "throughput_bps": 1829142.857142857,
+        "delay_gradient_ms_per_s": -1.5182186234817807,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2801000,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206367261,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43997,
+        "video_bytes": 43115,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.8,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 192,
+        "throughput_bps": 1833208.3333333333,
+        "delay_gradient_ms_per_s": 1.0416666666666676,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2801000,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206367462,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 46372,
+        "video_bytes": 45717,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.2142857142857144,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 135,
+        "throughput_bps": 2747970.3703703703,
+        "delay_gradient_ms_per_s": 13.051146384479713,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2723500,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206367664,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41329,
+        "video_bytes": 40304,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.775,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 191,
+        "throughput_bps": 1731057.5916230367,
+        "delay_gradient_ms_per_s": 4.973821989528797,
+        "current_bandwidth_bps": 2723497.0
+      },
+      "output_bandwidth": 2723500,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206367864,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45070,
+        "video_bytes": 44274,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8292682926829267,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 157,
+        "throughput_bps": 2296560.5095541403,
+        "delay_gradient_ms_per_s": 0.985744616317864,
+        "current_bandwidth_bps": 2723497.0
+      },
+      "output_bandwidth": 2723500,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206368065,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41819,
+        "video_bytes": 40735,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.769230769230769,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1798666.6666666667,
+        "delay_gradient_ms_per_s": 4.753820033955858,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2723500,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206368266,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 47970,
+        "video_bytes": 47260,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.5348837209302326,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 119,
+        "throughput_bps": 3224873.949579832,
+        "delay_gradient_ms_per_s": 22.08155989668595,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206368467,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42567,
+        "video_bytes": 41702,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.25,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 170,
+        "throughput_bps": 2003152.9411764706,
+        "delay_gradient_ms_per_s": 12.941176470588232,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206368682,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43985,
+        "video_bytes": 43125,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.682926829268293,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 151,
+        "throughput_bps": 2330331.1258278145,
+        "delay_gradient_ms_per_s": -0.8672343109429201,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206368887,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 46507,
+        "video_bytes": 45723,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.1904761904761907,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 142,
+        "throughput_bps": 2620112.676056338,
+        "delay_gradient_ms_per_s": -13.413816230717643,
+        "current_bandwidth_bps": 2759232.0
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206369088,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45666,
+        "video_bytes": 44952,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.7857142857142856,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 127,
+        "throughput_bps": 2876598.42519685,
+        "delay_gradient_ms_per_s": -1.1248593925759276,
+        "current_bandwidth_bps": 2759232.0
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206369303,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 47514,
+        "video_bytes": 46906,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.813953488372093,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 121,
+        "throughput_bps": 3141421.487603306,
+        "delay_gradient_ms_per_s": -25.312153411326968,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206369512,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43324,
+        "video_bytes": 42461,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.6097560975609757,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2265307.1895424835,
+        "delay_gradient_ms_per_s": 4.590725178960474,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206369724,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43046,
+        "video_bytes": 42181,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.25,
+        "max_rtt_ms": 36,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 170,
+        "throughput_bps": 2025694.1176470588,
+        "delay_gradient_ms_per_s": -19.41176470588235,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206369925,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 44375,
+        "video_bytes": 43425,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.075,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 163,
+        "throughput_bps": 2177914.110429448,
+        "delay_gradient_ms_per_s": -7.055214723926382,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206370130,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42339,
+        "video_bytes": 41472,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975609756097561,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 163,
+        "throughput_bps": 2077987.7300613497,
+        "delay_gradient_ms_per_s": -10.473269062226116,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206370330,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43024,
+        "video_bytes": 42085,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.325,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 173,
+        "throughput_bps": 1989549.132947977,
+        "delay_gradient_ms_per_s": -4.913294797687862,
+        "current_bandwidth_bps": 2759232.0
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206370544,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41906,
+        "video_bytes": 40951,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.05,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 177,
+        "throughput_bps": 1894056.4971751412,
+        "delay_gradient_ms_per_s": -7.909604519774011,
+        "current_bandwidth_bps": 2759232.0
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206370765,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 42218,
+        "video_bytes": 41088,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.871794871794871,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 190,
+        "throughput_bps": 1777600.0,
+        "delay_gradient_ms_per_s": 0.3047091412742403,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2759230,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206370968,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44659,
+        "video_bytes": 43879,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4878048780487805,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 152,
+        "throughput_bps": 2350473.6842105263,
+        "delay_gradient_ms_per_s": 12.045739348370931,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206371169,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 44054,
+        "video_bytes": 43029,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.95,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2148975.6097560977,
+        "delay_gradient_ms_per_s": -1.2195121951219496,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206371372,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 47160,
+        "video_bytes": 46450,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.7209302325581395,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 117,
+        "throughput_bps": 3224615.3846153845,
+        "delay_gradient_ms_per_s": -24.54952454952455,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206371572,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44996,
+        "video_bytes": 44341,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.880952380952381,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 127,
+        "throughput_bps": 2834393.7007874018,
+        "delay_gradient_ms_per_s": 11.623547056617923,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206371783,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 47540,
+        "video_bytes": 46805,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.5,
+        "max_rtt_ms": 24,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 116,
+        "throughput_bps": 3278620.6896551726,
+        "delay_gradient_ms_per_s": 24.220032840722492,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206371988,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43366,
+        "video_bytes": 42482,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.2195121951219514,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2344108.108108108,
+        "delay_gradient_ms_per_s": -4.359716859716859,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206372194,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45174,
+        "video_bytes": 44519,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.2142857142857144,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 135,
+        "throughput_bps": 2676977.777777778,
+        "delay_gradient_ms_per_s": -25.04409171075838,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206372396,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45646,
+        "video_bytes": 44911,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.238095238095238,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 136,
+        "throughput_bps": 2685058.8235294116,
+        "delay_gradient_ms_per_s": -23.109243697478988,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206372607,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 46245,
+        "video_bytes": 45510,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.0238095238095237,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 127,
+        "throughput_bps": 2913070.8661417323,
+        "delay_gradient_ms_per_s": 10.12373453318335,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206372811,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 44072,
+        "video_bytes": 43155,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.075,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1980764.0449438202,
+        "delay_gradient_ms_per_s": -0.2808988764044934,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206373026,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45463,
+        "video_bytes": 44648,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5238095238095237,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2457459.4594594594,
+        "delay_gradient_ms_per_s": -16.08751608751609,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206373249,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42843,
+        "video_bytes": 41952,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.45,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1925528.0898876404,
+        "delay_gradient_ms_per_s": -0.5617977528089868,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206373453,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41042,
+        "video_bytes": 40097,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.75,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 190,
+        "throughput_bps": 1728084.2105263157,
+        "delay_gradient_ms_per_s": 3.1578947368421035,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206373656,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43583,
+        "video_bytes": 42689,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.097560975609756,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 168,
+        "throughput_bps": 2075380.9523809524,
+        "delay_gradient_ms_per_s": 3.4580498866213185,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206373856,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40371,
+        "video_bytes": 39375,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.205128205128205,
+        "max_rtt_ms": 24,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1794266.6666666667,
+        "delay_gradient_ms_per_s": -4.049707602339178,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206374057,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 45438,
+        "video_bytes": 44703,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5714285714285716,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 150,
+        "throughput_bps": 2423360.0,
+        "delay_gradient_ms_per_s": 8.253968253968255,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206374258,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43472,
+        "video_bytes": 42459,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.025,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 172,
+        "throughput_bps": 2021953.488372093,
+        "delay_gradient_ms_per_s": 4.360465116279073,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206374460,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42104,
+        "video_bytes": 41239,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.85,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1736247.4226804124,
+        "delay_gradient_ms_per_s": 5.154639175257731,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206374660,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44400,
+        "video_bytes": 43490,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.902439024390244,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 160,
+        "throughput_bps": 2220000.0,
+        "delay_gradient_ms_per_s": 6.74107142857143,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206374861,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43915,
+        "video_bytes": 43087,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.195121951219512,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 172,
+        "throughput_bps": 2042558.1395348837,
+        "delay_gradient_ms_per_s": 3.917497231450719,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206375066,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44396,
+        "video_bytes": 43577,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5121951219512195,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2321359.477124183,
+        "delay_gradient_ms_per_s": -0.48241518829753954,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206375276,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 48127,
+        "video_bytes": 47559,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.488372093023256,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 111,
+        "throughput_bps": 3468612.6126126125,
+        "delay_gradient_ms_per_s": 6.084006084006086,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206375487,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 44,
+        "total_bytes": 46068,
+        "video_bytes": 45438,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.744186046511628,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 118,
+        "throughput_bps": 3123254.2372881356,
+        "delay_gradient_ms_per_s": -3.448528872257688,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206375707,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40493,
+        "video_bytes": 39548,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.325,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 183,
+        "throughput_bps": 1770185.7923497267,
+        "delay_gradient_ms_per_s": -2.459016393442624,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206375909,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40969,
+        "video_bytes": 39883,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0256410256410255,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1672204.081632653,
+        "delay_gradient_ms_per_s": 0.7787325456498356,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206376114,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45462,
+        "video_bytes": 44589,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7560975609756095,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 154,
+        "throughput_bps": 2361662.337662338,
+        "delay_gradient_ms_per_s": 1.3450834879406317,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206376314,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41843,
+        "video_bytes": 41075,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.0,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2041121.9512195121,
+        "delay_gradient_ms_per_s": -13.690476190476193,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206376515,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43489,
+        "video_bytes": 42544,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.275,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 2034573.0994152047,
+        "delay_gradient_ms_per_s": -7.309941520467838,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206376724,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41746,
+        "video_bytes": 40759,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.325,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 173,
+        "throughput_bps": 1930450.867052023,
+        "delay_gradient_ms_per_s": -3.179190751445086,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206376935,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41376,
+        "video_bytes": 40495,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.65,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1779612.9032258065,
+        "delay_gradient_ms_per_s": -11.290322580645162,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206377136,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40924,
+        "video_bytes": 39979,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.575,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 183,
+        "throughput_bps": 1789027.3224043716,
+        "delay_gradient_ms_per_s": -1.366120218579235,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206377342,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42098,
+        "video_bytes": 41123,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.6,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1830347.8260869565,
+        "delay_gradient_ms_per_s": -9.23913043478261,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206377544,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41309,
+        "video_bytes": 40412,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.025,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 1932584.7953216375,
+        "delay_gradient_ms_per_s": -2.0467836257309946,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206377745,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41663,
+        "video_bytes": 40638,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.1,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2032341.463414634,
+        "delay_gradient_ms_per_s": 0.0,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206377946,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41113,
+        "video_bytes": 40143,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.769230769230769,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 188,
+        "throughput_bps": 1749489.3617021276,
+        "delay_gradient_ms_per_s": -4.031354983202686,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206378148,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 45398,
+        "video_bytes": 44565,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5609756097560976,
+        "max_rtt_ms": 24,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 147,
+        "throughput_bps": 2470639.455782313,
+        "delay_gradient_ms_per_s": 10.770975056689341,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206378349,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 38,
+        "total_bytes": 37910,
+        "video_bytes": 36582,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 6.351351351351352,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 235,
+        "throughput_bps": 1290553.1914893617,
+        "delay_gradient_ms_per_s": 11.658579071792957,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206378559,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39367,
+        "video_bytes": 38397,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.948717948717949,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 193,
+        "throughput_bps": 1631792.7461139897,
+        "delay_gradient_ms_per_s": -11.153531497136623,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206378761,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39096,
+        "video_bytes": 38046,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.17948717948718,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 202,
+        "throughput_bps": 1548356.4356435644,
+        "delay_gradient_ms_per_s": -0.29963522668055986,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206378966,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40654,
+        "video_bytes": 39524,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.9743589743589745,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1806844.4444444445,
+        "delay_gradient_ms_per_s": 13.976608187134506,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206379171,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 38478,
+        "video_bytes": 37360,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.342105263157895,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 200,
+        "throughput_bps": 1539120.0,
+        "delay_gradient_ms_per_s": -8.157894736842106,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206379373,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43171,
+        "video_bytes": 42200,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.875,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 166,
+        "throughput_bps": 2080530.1204819276,
+        "delay_gradient_ms_per_s": 15.963855421686748,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206379582,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42482,
+        "video_bytes": 41530,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.225,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 174,
+        "throughput_bps": 1953195.4022988505,
+        "delay_gradient_ms_per_s": -10.632183908045981,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206379784,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41375,
+        "video_bytes": 40446,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.125,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 170,
+        "throughput_bps": 1947058.8235294118,
+        "delay_gradient_ms_per_s": 9.11764705882353,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206379986,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39395,
+        "video_bytes": 38389,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.410256410256411,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1741215.4696132597,
+        "delay_gradient_ms_per_s": -2.951439371910437,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206380187,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44106,
+        "video_bytes": 43245,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7560975609756095,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 154,
+        "throughput_bps": 2291220.7792207794,
+        "delay_gradient_ms_per_s": -4.993815708101425,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206380398,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41857,
+        "video_bytes": 41082,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.097560975609756,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 143,
+        "throughput_bps": 2341650.3496503495,
+        "delay_gradient_ms_per_s": 0.6493506493506502,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206380604,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42526,
+        "video_bytes": 41606,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.731707317073171,
+        "max_rtt_ms": 29,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2223581.6993464055,
+        "delay_gradient_ms_per_s": 12.527233115468412,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206380806,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42514,
+        "video_bytes": 41603,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.025,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 1988959.0643274854,
+        "delay_gradient_ms_per_s": -1.4619883040935697,
+        "current_bandwidth_bps": 2775752.0
+      },
+      "output_bandwidth": 2775750,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206381006,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43257,
+        "video_bytes": 42417,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.731707317073171,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2261803.9215686275,
+        "delay_gradient_ms_per_s": -0.8714596949891066,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206381210,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40800,
+        "video_bytes": 39855,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.475,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 179,
+        "throughput_bps": 1823463.687150838,
+        "delay_gradient_ms_per_s": -4.189944134078212,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206381417,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41335,
+        "video_bytes": 40310,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.65,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1777849.4623655914,
+        "delay_gradient_ms_per_s": 16.666666666666668,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206381623,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 38791,
+        "video_bytes": 37666,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.157894736842105,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 206,
+        "throughput_bps": 1506446.6019417476,
+        "delay_gradient_ms_per_s": 0.0,
+        "current_bandwidth_bps": 2625929.0
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206381826,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41561,
+        "video_bytes": 40642,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.15,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 1944374.2690058479,
+        "delay_gradient_ms_per_s": 2.3391812865497044,
+        "current_bandwidth_bps": 2625929.0
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206382028,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40269,
+        "video_bytes": 39325,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.275,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1779845.3038674034,
+        "delay_gradient_ms_per_s": -4.696132596685083,
+        "current_bandwidth_bps": 2625929.0
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206382234,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41223,
+        "video_bytes": 40240,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.75,
+        "max_rtt_ms": 37,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 190,
+        "throughput_bps": 1735705.2631578948,
+        "delay_gradient_ms_per_s": 15.263157894736844,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206382445,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 37881,
+        "video_bytes": 36773,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0,
+        "max_rtt_ms": 35,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 205,
+        "throughput_bps": 1478282.9268292682,
+        "delay_gradient_ms_per_s": -1.026957637997436,
+        "current_bandwidth_bps": 2625929.0
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206382647,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40674,
+        "video_bytes": 39577,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.769230769230769,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1749419.3548387096,
+        "delay_gradient_ms_per_s": 0.33955857385399085,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206382847,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43284,
+        "video_bytes": 42402,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.2439024390243905,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 142,
+        "throughput_bps": 2438535.2112676054,
+        "delay_gradient_ms_per_s": 12.97786720321932,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206383048,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40988,
+        "video_bytes": 39938,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0256410256410255,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1672979.5918367347,
+        "delay_gradient_ms_per_s": -1.8394199785177234,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206383251,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41359,
+        "video_bytes": 40389,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.923076923076923,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 192,
+        "throughput_bps": 1723291.6666666667,
+        "delay_gradient_ms_per_s": -0.24671052631578907,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206383452,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41715,
+        "video_bytes": 40665,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.333333333333333,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1803891.8918918918,
+        "delay_gradient_ms_per_s": 6.2873399715505,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206383652,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44212,
+        "video_bytes": 43303,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7804878048780486,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 155,
+        "throughput_bps": 2281909.6774193547,
+        "delay_gradient_ms_per_s": -4.024577572964667,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206383853,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39323,
+        "video_bytes": 38290,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.17948717948718,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 202,
+        "throughput_bps": 1557346.5346534653,
+        "delay_gradient_ms_per_s": 2.240750390828557,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206384055,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42189,
+        "video_bytes": 41260,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.65,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1814580.6451612904,
+        "delay_gradient_ms_per_s": 5.913978494623659,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2625930,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206384255,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42328,
+        "video_bytes": 41411,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.775,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 191,
+        "throughput_bps": 1772900.5235602094,
+        "delay_gradient_ms_per_s": 4.450261780104714,
+        "current_bandwidth_bps": 2504082.0
+      },
+      "output_bandwidth": 2504080,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206384456,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44807,
+        "video_bytes": 44072,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.0238095238095237,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 133,
+        "throughput_bps": 2695157.8947368423,
+        "delay_gradient_ms_per_s": 9.667024704618688,
+        "current_bandwidth_bps": 2504082.0
+      },
+      "output_bandwidth": 2504080,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206384664,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40601,
+        "video_bytes": 39471,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.666666666666667,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 182,
+        "throughput_bps": 1784659.3406593406,
+        "delay_gradient_ms_per_s": 7.142857142857142,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2504080,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206384865,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43563,
+        "video_bytes": 42698,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 2062153.8461538462,
+        "delay_gradient_ms_per_s": -4.4378698224852045,
+        "current_bandwidth_bps": 2504082.0
+      },
+      "output_bandwidth": 2504080,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206385066,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43389,
+        "video_bytes": 42544,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5121951219512195,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 144,
+        "throughput_bps": 2410500.0,
+        "delay_gradient_ms_per_s": 19.146825396825395,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2504080,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206385285,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43601,
+        "video_bytes": 42576,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1959595.5056179776,
+        "delay_gradient_ms_per_s": -11.235955056179776,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206385487,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39439,
+        "video_bytes": 38469,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.923076923076923,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 197,
+        "throughput_bps": 1601583.7563451778,
+        "delay_gradient_ms_per_s": 2.8853860539674057,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206385692,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42476,
+        "video_bytes": 41556,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.731707317073171,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2220967.320261438,
+        "delay_gradient_ms_per_s": -15.546218487394958,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206385897,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42103,
+        "video_bytes": 41343,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8536585365853657,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 158,
+        "throughput_bps": 2131797.4683544305,
+        "delay_gradient_ms_per_s": 0.045207956600361504,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206386107,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41909,
+        "video_bytes": 40908,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 1983857.9881656806,
+        "delay_gradient_ms_per_s": -11.538461538461538,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206386309,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40689,
+        "video_bytes": 39767,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.4,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 176,
+        "throughput_bps": 1849500.0,
+        "delay_gradient_ms_per_s": -15.340909090909093,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206386514,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42751,
+        "video_bytes": 41835,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.85,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 173,
+        "throughput_bps": 1976924.8554913295,
+        "delay_gradient_ms_per_s": 0.5780346820809255,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206386724,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41259,
+        "video_bytes": 40314,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 1953088.7573964498,
+        "delay_gradient_ms_per_s": -2.0710059171597663,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206386935,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39890,
+        "video_bytes": 38760,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.743589743589744,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1724972.972972973,
+        "delay_gradient_ms_per_s": -3.8122332859174963,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206387145,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40489,
+        "video_bytes": 39519,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.897435897435898,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 191,
+        "throughput_bps": 1695874.3455497383,
+        "delay_gradient_ms_per_s": 8.624965555249382,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206387347,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41813,
+        "video_bytes": 40848,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.1,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2039658.536585366,
+        "delay_gradient_ms_per_s": 9.14634146341463,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206387547,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40622,
+        "video_bytes": 39633,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0256410256410255,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1658040.8163265307,
+        "delay_gradient_ms_per_s": 1.8259935553168647,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206387749,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42770,
+        "video_bytes": 41862,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.6097560975609757,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2311891.891891892,
+        "delay_gradient_ms_per_s": 10.02252252252252,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206387949,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40249,
+        "video_bytes": 39279,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.153846153846154,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 201,
+        "throughput_bps": 1601950.248756219,
+        "delay_gradient_ms_per_s": -4.634721131186174,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206388153,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43119,
+        "video_bytes": 42279,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4146341463414633,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 145,
+        "throughput_bps": 2378979.3103448274,
+        "delay_gradient_ms_per_s": 15.008210180623976,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206388354,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43223,
+        "video_bytes": 42344,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7804878048780486,
+        "max_rtt_ms": 20,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 155,
+        "throughput_bps": 2230864.5161290322,
+        "delay_gradient_ms_per_s": -6.543778801843318,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206388558,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 42830,
+        "video_bytes": 42112,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.6666666666666665,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 154,
+        "throughput_bps": 2224935.064935065,
+        "delay_gradient_ms_per_s": 12.98701298701299,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206388763,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42431,
+        "video_bytes": 41598,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.2439024390243905,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 174,
+        "throughput_bps": 1950850.5747126436,
+        "delay_gradient_ms_per_s": -7.361795292829778,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206388965,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 46068,
+        "video_bytes": 45253,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.1666666666666665,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 133,
+        "throughput_bps": 2771007.5187969925,
+        "delay_gradient_ms_per_s": -14.679556032939493,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206389186,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42522,
+        "video_bytes": 41700,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.6097560975609757,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2298486.4864864866,
+        "delay_gradient_ms_per_s": -2.50965250965251,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206389386,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43480,
+        "video_bytes": 42560,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7560975609756095,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 160,
+        "throughput_bps": 2174000.0,
+        "delay_gradient_ms_per_s": 11.66666666666667,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206389597,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41707,
+        "video_bytes": 40842,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.375,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 175,
+        "throughput_bps": 1906605.7142857143,
+        "delay_gradient_ms_per_s": -2.5714285714285676,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206389799,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44307,
+        "video_bytes": 43452,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.0,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2161317.073170732,
+        "delay_gradient_ms_per_s": -8.333333333333334,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206390007,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40946,
+        "video_bytes": 39836,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.153846153846154,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 182,
+        "throughput_bps": 1799824.1758241758,
+        "delay_gradient_ms_per_s": -9.065934065934066,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206390212,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41208,
+        "video_bytes": 40238,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.333333333333333,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1791652.1739130435,
+        "delay_gradient_ms_per_s": 9.110411899313503,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206390422,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41540,
+        "video_bytes": 40700,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.341463414634147,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1866966.2921348314,
+        "delay_gradient_ms_per_s": -0.6420545746388471,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206390622,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41306,
+        "video_bytes": 40361,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.35,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 174,
+        "throughput_bps": 1899126.4367816092,
+        "delay_gradient_ms_per_s": -2.298850574712641,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206390828,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40910,
+        "video_bytes": 39909,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.125,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1818222.2222222222,
+        "delay_gradient_ms_per_s": -3.6111111111111134,
+        "current_bandwidth_bps": 2432440.0
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206391033,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40448,
+        "video_bytes": 39454,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.564102564102564,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 189,
+        "throughput_bps": 1712084.656084656,
+        "delay_gradient_ms_per_s": 3.1049846839320483,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206391235,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40228,
+        "video_bytes": 39234,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.825,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 193,
+        "throughput_bps": 1667481.865284974,
+        "delay_gradient_ms_per_s": -4.404145077720205,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206391439,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40756,
+        "video_bytes": 39755,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.9743589743589745,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1663510.2040816327,
+        "delay_gradient_ms_per_s": -0.2551020408163256,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206391639,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41897,
+        "video_bytes": 40904,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.75,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 190,
+        "throughput_bps": 1764084.2105263157,
+        "delay_gradient_ms_per_s": 3.1578947368421035,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206391842,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 39636,
+        "video_bytes": 38664,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.65,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1704774.1935483871,
+        "delay_gradient_ms_per_s": 5.376344086021505,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206392042,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39981,
+        "video_bytes": 38983,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.128205128205129,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 200,
+        "throughput_bps": 1599240.0,
+        "delay_gradient_ms_per_s": -4.907894736842104,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206392245,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42408,
+        "video_bytes": 41440,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.85,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1748783.5051546392,
+        "delay_gradient_ms_per_s": -7.731958762886598,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206392446,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40869,
+        "video_bytes": 39778,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.9743589743589745,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1685319.587628866,
+        "delay_gradient_ms_per_s": -9.25122083559414,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206392662,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 38352,
+        "video_bytes": 37382,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.641025641025641,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 197,
+        "throughput_bps": 1557441.6243654822,
+        "delay_gradient_ms_per_s": 5.824205183008284,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2432440,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206392863,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42396,
+        "video_bytes": 41371,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 175,
+        "throughput_bps": 1938102.857142857,
+        "delay_gradient_ms_per_s": -9.428571428571429,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206393065,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42884,
+        "video_bytes": 42050,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5121951219512195,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 149,
+        "throughput_bps": 2302496.644295302,
+        "delay_gradient_ms_per_s": 2.7804410354745945,
+        "current_bandwidth_bps": 2291897.0
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206393279,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 43676,
+        "video_bytes": 43021,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.380952380952381,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 142,
+        "throughput_bps": 2460619.7183098593,
+        "delay_gradient_ms_per_s": -3.3534540576794107,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206393479,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39709,
+        "video_bytes": 38579,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.769230769230769,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1707913.9784946237,
+        "delay_gradient_ms_per_s": 4.202037351443127,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206393681,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 42584,
+        "video_bytes": 41929,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5238095238095237,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2301837.8378378376,
+        "delay_gradient_ms_per_s": -5.148005148005148,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206393882,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43869,
+        "video_bytes": 42863,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.6,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 155,
+        "throughput_bps": 2264206.4516129033,
+        "delay_gradient_ms_per_s": 16.7741935483871,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206394086,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44296,
+        "video_bytes": 43425,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.317073170731707,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 147,
+        "throughput_bps": 2410666.6666666665,
+        "delay_gradient_ms_per_s": -9.73436993845157,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206394291,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40186,
+        "video_bytes": 39200,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.487179487179487,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1737772.972972973,
+        "delay_gradient_ms_per_s": 5.135135135135136,
+        "current_bandwidth_bps": 2291897.0
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206394495,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43610,
+        "video_bytes": 42776,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975609756097561,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 163,
+        "throughput_bps": 2140368.0981595092,
+        "delay_gradient_ms_per_s": 1.5045281916447535,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206394696,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42953,
+        "video_bytes": 42033,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8780487804878048,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 159,
+        "throughput_bps": 2161157.2327044024,
+        "delay_gradient_ms_per_s": 10.16771488469602,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206394897,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41531,
+        "video_bytes": 40771,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8780487804878048,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 159,
+        "throughput_bps": 2089610.0628930817,
+        "delay_gradient_ms_per_s": -12.548667265648401,
+        "current_bandwidth_bps": 2291897.0
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206395098,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39775,
+        "video_bytes": 38675,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.641025641025641,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 191,
+        "throughput_bps": 1665968.5863874345,
+        "delay_gradient_ms_per_s": 0.09644530173601631,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206395305,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41561,
+        "video_bytes": 40621,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.35,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 174,
+        "throughput_bps": 1910850.5747126436,
+        "delay_gradient_ms_per_s": -9.770114942528737,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206395508,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41975,
+        "video_bytes": 41135,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.926829268292683,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 161,
+        "throughput_bps": 2085714.2857142857,
+        "delay_gradient_ms_per_s": 2.7506654835847395,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206395714,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41772,
+        "video_bytes": 40984,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.7804878048780486,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 160,
+        "throughput_bps": 2088600.0,
+        "delay_gradient_ms_per_s": -9.999999999999998,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206395923,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39943,
+        "video_bytes": 38893,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.666666666666667,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 188,
+        "throughput_bps": 1699702.1276595744,
+        "delay_gradient_ms_per_s": 0.36394176931690925,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206396125,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41183,
+        "video_bytes": 40238,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.3,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 172,
+        "throughput_bps": 1915488.3720930233,
+        "delay_gradient_ms_per_s": -5.232558139534883,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206396327,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41681,
+        "video_bytes": 40656,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.275,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 1949988.3040935672,
+        "delay_gradient_ms_per_s": -4.970760233918129,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206396536,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39298,
+        "video_bytes": 38309,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.410256410256411,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 183,
+        "throughput_bps": 1717945.3551912569,
+        "delay_gradient_ms_per_s": -5.162496404946791,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206396740,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40628,
+        "video_bytes": 39683,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.85,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1675381.4432989692,
+        "delay_gradient_ms_per_s": -1.0309278350515472,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206396940,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40832,
+        "video_bytes": 39782,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.102564102564102,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 199,
+        "throughput_bps": 1641487.4371859296,
+        "delay_gradient_ms_per_s": -2.6051309177466284,
+        "current_bandwidth_bps": 2291897.0
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206397143,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40464,
+        "video_bytes": 39334,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.794871794871795,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 187,
+        "throughput_bps": 1731080.2139037433,
+        "delay_gradient_ms_per_s": 0.6051224317478189,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206397345,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39864,
+        "video_bytes": 38845,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.102564102564102,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1761944.7513812154,
+        "delay_gradient_ms_per_s": 6.208200058156444,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2291900,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206397545,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40751,
+        "video_bytes": 39855,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.95,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 198,
+        "throughput_bps": 1646505.0505050505,
+        "delay_gradient_ms_per_s": -2.020202020202022,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206397747,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43729,
+        "video_bytes": 42855,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.0,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2133121.951219512,
+        "delay_gradient_ms_per_s": 4.761904761904764,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206397949,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41776,
+        "video_bytes": 40680,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.897435897435898,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 191,
+        "throughput_bps": 1749780.1047120418,
+        "delay_gradient_ms_per_s": -1.584458528520252,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206398149,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41917,
+        "video_bytes": 41141,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.0,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2044731.7073170731,
+        "delay_gradient_ms_per_s": 2.9761904761904763,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206398352,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39992,
+        "video_bytes": 38892,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.333333333333333,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1729383.7837837837,
+        "delay_gradient_ms_per_s": 2.958748221906116,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206398556,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43803,
+        "video_bytes": 43004,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4390243902439024,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 146,
+        "throughput_bps": 2400164.383561644,
+        "delay_gradient_ms_per_s": -1.4840182648401805,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206398758,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 43398,
+        "video_bytes": 42583,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.642857142857143,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2269176.470588235,
+        "delay_gradient_ms_per_s": 0.3112356053532513,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206398959,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40966,
+        "video_bytes": 39978,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.205128205128205,
+        "max_rtt_ms": 30,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 203,
+        "throughput_bps": 1614423.645320197,
+        "delay_gradient_ms_per_s": -3.0852994555353876,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206399161,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41093,
+        "video_bytes": 40061,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.076923076923077,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 198,
+        "throughput_bps": 1660323.2323232323,
+        "delay_gradient_ms_per_s": 4.3859649122807,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206399367,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44198,
+        "video_bytes": 43311,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.3658536585365852,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 148,
+        "throughput_bps": 2389081.081081081,
+        "delay_gradient_ms_per_s": -9.684684684684683,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206399568,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41359,
+        "video_bytes": 40426,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.2,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 168,
+        "throughput_bps": 1969476.1904761905,
+        "delay_gradient_ms_per_s": -4.761904761904761,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206399771,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40489,
+        "video_bytes": 39464,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.435897435897436,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1760391.3043478262,
+        "delay_gradient_ms_per_s": 12.986270022883293,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206399978,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41100,
+        "video_bytes": 40323,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.146341463414634,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 170,
+        "throughput_bps": 1934117.6470588236,
+        "delay_gradient_ms_per_s": -2.913165266106445,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206400188,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44590,
+        "video_bytes": 43750,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4634146341463414,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 152,
+        "throughput_bps": 2346842.1052631577,
+        "delay_gradient_ms_per_s": -4.965538847117794,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206400397,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42311,
+        "video_bytes": 41442,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5609756097560976,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 151,
+        "throughput_bps": 2241642.3841059604,
+        "delay_gradient_ms_per_s": -3.0905077262693137,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206400604,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41475,
+        "video_bytes": 40610,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.225,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 1963313.6094674557,
+        "delay_gradient_ms_per_s": 11.538461538461538,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206400806,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40642,
+        "video_bytes": 39592,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.384615384615385,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1806311.111111111,
+        "delay_gradient_ms_per_s": 3.0263157894736845,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206401007,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42970,
+        "video_bytes": 42050,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.902439024390244,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 160,
+        "throughput_bps": 2148500.0,
+        "delay_gradient_ms_per_s": -6.071428571428575,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206401208,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 43304,
+        "video_bytes": 42649,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.642857142857143,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 153,
+        "throughput_bps": 2264261.4379084967,
+        "delay_gradient_ms_per_s": 5.913476501711792,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206401413,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40671,
+        "video_bytes": 39652,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.45,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1827910.1123595505,
+        "delay_gradient_ms_per_s": 1.6853932584269653,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206401613,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41122,
+        "video_bytes": 40257,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.45,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 178,
+        "throughput_bps": 1848179.775280899,
+        "delay_gradient_ms_per_s": -4.4943820224719095,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206401814,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41604,
+        "video_bytes": 40711,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.121951219512195,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 1969420.1183431952,
+        "delay_gradient_ms_per_s": -3.7897999436460994,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206402019,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40762,
+        "video_bytes": 39811,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.475,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 179,
+        "throughput_bps": 1821765.3631284917,
+        "delay_gradient_ms_per_s": -1.9553072625698356,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206402219,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41505,
+        "video_bytes": 40640,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.5,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 180,
+        "throughput_bps": 1844666.6666666667,
+        "delay_gradient_ms_per_s": 7.222222222222224,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206402425,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40290,
+        "video_bytes": 39240,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.487179487179487,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1742270.2702702703,
+        "delay_gradient_ms_per_s": -4.295874822190612,
+        "current_bandwidth_bps": 2168790.0
+      },
+      "output_bandwidth": 2168790,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206402626,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40779,
+        "video_bytes": 39649,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.153846153846154,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1802386.7403314917,
+        "delay_gradient_ms_per_s": -6.280895609188716,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206402838,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42844,
+        "video_bytes": 41979,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.625,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1852713.5135135136,
+        "delay_gradient_ms_per_s": 1.8918918918918899,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206403040,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41199,
+        "video_bytes": 40187,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.65,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 186,
+        "throughput_bps": 1772000.0,
+        "delay_gradient_ms_per_s": 0.0,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206403243,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40893,
+        "video_bytes": 39910,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.076923076923077,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 198,
+        "throughput_bps": 1652242.4242424243,
+        "delay_gradient_ms_per_s": -4.42583732057416,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206403445,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42276,
+        "video_bytes": 41267,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.425,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 177,
+        "throughput_bps": 1910779.6610169492,
+        "delay_gradient_ms_per_s": -0.8474576271186461,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206403645,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 38445,
+        "video_bytes": 37351,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.7105263157894735,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 199,
+        "throughput_bps": 1545527.6381909547,
+        "delay_gradient_ms_per_s": -3.9672044432689773,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206403846,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41362,
+        "video_bytes": 40426,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.625,
+        "max_rtt_ms": 36,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 185,
+        "throughput_bps": 1788627.027027027,
+        "delay_gradient_ms_per_s": 14.864864864864865,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206404049,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41577,
+        "video_bytes": 40594,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.275,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 171,
+        "throughput_bps": 1945122.8070175438,
+        "delay_gradient_ms_per_s": 3.8011695906432714,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206404250,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41214,
+        "video_bytes": 40122,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.282051282051282,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 206,
+        "throughput_bps": 1600543.6893203883,
+        "delay_gradient_ms_per_s": -7.294328053142565,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206404456,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40771,
+        "video_bytes": 39783,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.153846153846154,
+        "max_rtt_ms": 32,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 201,
+        "throughput_bps": 1622726.368159204,
+        "delay_gradient_ms_per_s": 4.0455616653574245,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206404659,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40091,
+        "video_bytes": 39151,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.725,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 189,
+        "throughput_bps": 1696973.544973545,
+        "delay_gradient_ms_per_s": 9.788359788359791,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206404866,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42008,
+        "video_bytes": 41168,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.0,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2049170.731707317,
+        "delay_gradient_ms_per_s": -4.166666666666665,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206405067,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 43655,
+        "video_bytes": 42630,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 169,
+        "throughput_bps": 2066508.875739645,
+        "delay_gradient_ms_per_s": 10.94674556213018,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206405279,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44191,
+        "video_bytes": 43536,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.4285714285714284,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 144,
+        "throughput_bps": 2455055.5555555555,
+        "delay_gradient_ms_per_s": -3.3068783068783048,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206405480,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 39755,
+        "video_bytes": 38810,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.6,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1728478.2608695652,
+        "delay_gradient_ms_per_s": -4.347826086956521,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206405681,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42975,
+        "video_bytes": 42070,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.658536585365854,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 156,
+        "throughput_bps": 2203846.153846154,
+        "delay_gradient_ms_per_s": -9.27960927960928,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206405887,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43318,
+        "video_bytes": 42482,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5121951219512195,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 149,
+        "throughput_bps": 2325798.6577181206,
+        "delay_gradient_ms_per_s": 16.53883029721956,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206406096,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 42156,
+        "video_bytes": 41256,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8292682926829267,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 157,
+        "throughput_bps": 2148076.433121019,
+        "delay_gradient_ms_per_s": -12.071580224446466,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206406304,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39210,
+        "video_bytes": 38240,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.666666666666667,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 192,
+        "throughput_bps": 1633750.0,
+        "delay_gradient_ms_per_s": -10.334429824561402,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206406505,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43543,
+        "video_bytes": 42703,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.8780487804878048,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 159,
+        "throughput_bps": 2190842.7672955976,
+        "delay_gradient_ms_per_s": -15.618448637316565,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206406707,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41585,
+        "video_bytes": 40621,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.875,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 165,
+        "throughput_bps": 2016242.4242424243,
+        "delay_gradient_ms_per_s": 2.7272727272727257,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206406913,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40500,
+        "video_bytes": 39635,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.975,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 1975609.756097561,
+        "delay_gradient_ms_per_s": -10.060975609756097,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206407126,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40024,
+        "video_bytes": 38974,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.512820512820513,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 187,
+        "throughput_bps": 1712256.6844919787,
+        "delay_gradient_ms_per_s": 3.701097663945959,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206407336,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41175,
+        "video_bytes": 40045,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.9743589743589745,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1697938.144329897,
+        "delay_gradient_ms_per_s": 0.800325556158438,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206407537,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41068,
+        "video_bytes": 40132,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.7,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 188,
+        "throughput_bps": 1747574.4680851065,
+        "delay_gradient_ms_per_s": -6.914893617021276,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206407738,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 39716,
+        "video_bytes": 38771,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.525,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1755403.3149171271,
+        "delay_gradient_ms_per_s": -1.3812154696132597,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206407939,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39884,
+        "video_bytes": 38897,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0256410256410255,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 196,
+        "throughput_bps": 1627918.3673469387,
+        "delay_gradient_ms_per_s": -1.3157894736842088,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206408146,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 39689,
+        "video_bytes": 38471,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.526315789473684,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 203,
+        "throughput_bps": 1564098.5221674878,
+        "delay_gradient_ms_per_s": -6.740990407052112,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206408347,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41582,
+        "video_bytes": 40658,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.4,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 176,
+        "throughput_bps": 1890090.9090909092,
+        "delay_gradient_ms_per_s": 3.4090909090909123,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206408557,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41658,
+        "video_bytes": 40724,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.725,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 164,
+        "throughput_bps": 2032097.5609756098,
+        "delay_gradient_ms_per_s": 10.67073170731707,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206408768,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40210,
+        "video_bytes": 39088,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.358974358974359,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1748260.8695652173,
+        "delay_gradient_ms_per_s": 2.688787185354687,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206408977,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44897,
+        "video_bytes": 44162,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 2.8095238095238093,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 123,
+        "throughput_bps": 2920130.0813008132,
+        "delay_gradient_ms_per_s": 6.194347657762295,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206409190,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42045,
+        "video_bytes": 41066,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.85,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 165,
+        "throughput_bps": 2038545.4545454546,
+        "delay_gradient_ms_per_s": 0.0,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206409393,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41737,
+        "video_bytes": 40872,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.325,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 173,
+        "throughput_bps": 1930034.6820809247,
+        "delay_gradient_ms_per_s": 17.052023121387283,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206409597,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39418,
+        "video_bytes": 38368,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.3076923076923075,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 182,
+        "throughput_bps": 1732659.3406593406,
+        "delay_gradient_ms_per_s": -1.7784846732215143,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206409804,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42317,
+        "video_bytes": 41292,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.2,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 168,
+        "throughput_bps": 2015095.238095238,
+        "delay_gradient_ms_per_s": -16.666666666666664,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206410006,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41777,
+        "video_bytes": 40912,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.525,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 181,
+        "throughput_bps": 1846497.2375690609,
+        "delay_gradient_ms_per_s": 0.8287292817679529,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206410215,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 41493,
+        "video_bytes": 40653,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.195121951219512,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 172,
+        "throughput_bps": 1929906.9767441861,
+        "delay_gradient_ms_per_s": 6.187707641196015,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206410417,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40519,
+        "video_bytes": 39494,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.6,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1761695.652173913,
+        "delay_gradient_ms_per_s": -5.434782608695652,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206410623,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39941,
+        "video_bytes": 38969,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.410256410256411,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 183,
+        "throughput_bps": 1746054.6448087431,
+        "delay_gradient_ms_per_s": -13.57492090882945,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206410823,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41812,
+        "video_bytes": 40789,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.6,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1817913.043478261,
+        "delay_gradient_ms_per_s": -8.152173913043477,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206411028,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40385,
+        "video_bytes": 39519,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.325,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 173,
+        "throughput_bps": 1867514.450867052,
+        "delay_gradient_ms_per_s": 9.537572254335263,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206411233,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40143,
+        "video_bytes": 39037,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.9743589743589745,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1655381.4432989692,
+        "delay_gradient_ms_per_s": -2.902875746066197,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206411434,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 40622,
+        "video_bytes": 39677,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.275,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 182,
+        "throughput_bps": 1785582.4175824176,
+        "delay_gradient_ms_per_s": -6.86813186813187,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206411636,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41249,
+        "video_bytes": 40384,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.725,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 189,
+        "throughput_bps": 1745989.417989418,
+        "delay_gradient_ms_per_s": -3.4391534391534364,
+        "current_bandwidth_bps": 2223017.0
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206411844,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 39,
+        "total_bytes": 39821,
+        "video_bytes": 38666,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.2894736842105265,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 201,
+        "throughput_bps": 1584915.422885572,
+        "delay_gradient_ms_per_s": 5.4988216810683435,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206412045,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41231,
+        "video_bytes": 40101,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.6923076923076925,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 183,
+        "throughput_bps": 1802448.087431694,
+        "delay_gradient_ms_per_s": 0.6471095772217419,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206412245,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 41457,
+        "video_bytes": 40419,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.897435897435898,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 194,
+        "throughput_bps": 1709567.0103092783,
+        "delay_gradient_ms_per_s": -0.5018990775908877,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206412446,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41652,
+        "video_bytes": 40707,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.025,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 161,
+        "throughput_bps": 2069664.5962732919,
+        "delay_gradient_ms_per_s": 5.900621118012423,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2223020,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206412648,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39525,
+        "video_bytes": 38555,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.0,
+        "max_rtt_ms": 25,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 195,
+        "throughput_bps": 1621538.4615384615,
+        "delay_gradient_ms_per_s": -4.210526315789478,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206412849,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40474,
+        "video_bytes": 39424,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 5.153846153846154,
+        "max_rtt_ms": 31,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 201,
+        "throughput_bps": 1610905.4726368159,
+        "delay_gradient_ms_per_s": -7.6983503534956785,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206413049,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 42401,
+        "video_bytes": 41398,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.15,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 166,
+        "throughput_bps": 2043421.686746988,
+        "delay_gradient_ms_per_s": 3.0120481927710867,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206413250,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 40063,
+        "video_bytes": 38991,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.333333333333333,
+        "max_rtt_ms": 22,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 184,
+        "throughput_bps": 1741869.5652173914,
+        "delay_gradient_ms_per_s": 5.7637299771167045,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206413451,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39095,
+        "video_bytes": 38125,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.794871794871795,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 187,
+        "throughput_bps": 1672513.3689839572,
+        "delay_gradient_ms_per_s": 4.4469462426118795,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206413653,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43457,
+        "video_bytes": 42599,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.658536585365854,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 150,
+        "throughput_bps": 2317706.6666666665,
+        "delay_gradient_ms_per_s": -6.396825396825398,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206413854,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43196,
+        "video_bytes": 42356,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5121951219512195,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 150,
+        "throughput_bps": 2303786.6666666665,
+        "delay_gradient_ms_per_s": 16.42857142857143,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206414055,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 43611,
+        "video_bytes": 42851,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.3658536585365852,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 144,
+        "throughput_bps": 2422833.3333333335,
+        "delay_gradient_ms_per_s": 0.8928571428571428,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206414257,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 40,
+        "total_bytes": 39173,
+        "video_bytes": 38123,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.487179487179487,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 191,
+        "throughput_bps": 1640753.9267015706,
+        "delay_gradient_ms_per_s": 3.8991457701846204,
+        "current_bandwidth_bps": 1.7976931348623157e+308
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206414468,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 41,
+        "total_bytes": 41940,
+        "video_bytes": 40915,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 4.1,
+        "max_rtt_ms": 26,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 174,
+        "throughput_bps": 1928275.8620689656,
+        "delay_gradient_ms_per_s": -12.068965517241383,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206414676,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 43,
+        "total_bytes": 44296,
+        "video_bytes": 43551,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5714285714285716,
+        "max_rtt_ms": 27,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 150,
+        "throughput_bps": 2362453.3333333335,
+        "delay_gradient_ms_per_s": 19.047619047619047,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    },
+    {
+      "timestamp": 1206414878,
+      "input_features": {
+        "total_packets": 50,
+        "video_packets": 42,
+        "total_bytes": 44356,
+        "video_bytes": 43560,
+        "min_rtt_ms": 0,
+        "avg_rtt_ms": 3.5365853658536586,
+        "max_rtt_ms": 21,
+        "loss_rate": 0.0,
+        "packet_loss_rate": 0.0,
+        "time_window_ms": 154,
+        "throughput_bps": 2304207.7922077924,
+        "delay_gradient_ms_per_s": 4.901051329622758,
+        "current_bandwidth_bps": 2161591.0
+      },
+      "output_bandwidth": 2161590,
+      "algorithm": "BBR"
+    }
+  ]
+}

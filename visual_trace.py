@@ -50,6 +50,6 @@ if __name__ == "__main__":
     #target_algo = "Cubic"
     #target_algo = "PCC"
     #target_algo = "Copa"
-    #target_algo = "Copa+"
-    target_algo = "BBR"
+    target_algo = "Copa+"
+    #target_algo = "BBR"
     visual_trace_result(target_algo)

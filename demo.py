@@ -21,23 +21,30 @@ TRACE_FILES = {
 RESULTS = defaultdict(dict) # key: trace, value: dict of results
 ALGORITHMS = [
             #"dummy", 
-            "HRCC", 
-            "GCC",
-            "Cubic",
-            "PCC",
-            "Copa",
-            "Copa+",
-            "BBR",
+            #"HRCC", 
+            #"GCC",
+            #"Cubic",
+            #"PCC",
+            #"Copa",
+            #"Copa+",
+            #"BBR",
+            #"Gemini",
+            "FARC",
             ] 
 N_TRACES = len(TRACE_FILES)
 N_ALGORITHMS = len(ALGORITHMS)
 
 
-def configure_env_file(algorithm: str):
+def configure_env_file(algorithm: str, debug=False):
     try:
         with open(".env", "w", encoding='utf-8') as envf:
             envf.write("# .env")
             envf.write(f"\nARG_A=\"{algorithm}\"")
+            # 为 FARC 算法启用调试模式
+            if algorithm == "FARC" or debug:
+                envf.write(f"\nFARC_DEBUG=1")
+            else:
+                envf.write(f"\nFARC_DEBUG=0")
     except Exception as e:
         print(f"Error: {e}")
         raise
@@ -60,8 +67,15 @@ def run_one_scenario(algorithm: str, trace: str):
 
     command = ["docker", "compose", "up"]
     print(f"Executing: {command} with algorithm: {algorithm}")
-    # 重定向输出到 /dev/null 以抑制 webrtc 日志输出
-    subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    
+    # 创建调试日志文件
+    debug_log_file = f"share/output/trace/{algorithm}_docker_debug.log"
+    print(f"调试日志将保存到: {debug_log_file}")
+    
+    with open(debug_log_file, "w") as log_f:
+        # 保留 stderr 以捕获调试信息，stdout 仍然重定向
+        subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=log_f)
+    
     time.sleep(3)
     command = ["docker", "compose", "down"]
     print(f"Executing: {command} with algorithm: {algorithm}")
