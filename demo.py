@@ -21,15 +21,16 @@ TRACE_FILES = {
 RESULTS = defaultdict(dict) # key: trace, value: dict of results
 ALGORITHMS = [
             #"dummy", 
-            #"HRCC", 
-            #"GCC",
+            "HRCC", 
+            "GCC",
             #"Cubic",
-            #"PCC",
+            "PCC",
             #"Copa",
             #"Copa+",
             #"BBR",
-            #"Gemini",
+            "Gemini",
             "FARC",
+            "Schaferct",
             ] 
 N_TRACES = len(TRACE_FILES)
 N_ALGORITHMS = len(ALGORITHMS)
@@ -45,6 +46,12 @@ def configure_env_file(algorithm: str, debug=False):
                 envf.write(f"\nFARC_DEBUG=1")
             else:
                 envf.write(f"\nFARC_DEBUG=0")
+            
+            # Schaferct 调试配置
+            if algorithm == "Schaferct" or debug:
+                envf.write(f"\nSCHAFERCT_DEBUG=1")
+            else:
+                envf.write(f"\nSCHAFERCT_DEBUG=0")
     except Exception as e:
         print(f"Error: {e}")
         raise

@@ -13,7 +13,7 @@ parser.add_argument('--case', '-C', type=str, help='Use case',
 parser.add_argument('--index', '-I', default=None, 
                     type=int, help='Index of sender and receiver', choices=[1, 2, 3])
 parser.add_argument('--algorithm', '-A', default="dummy", 
-                    type=str, help='Bandwidth estimator', choices=["dummy", "HRCC", "GCC", "Cubic", "PCC", "Copa", "Copa+", "BBR", "Gemini", "FARC"])
+                    type=str, help='Bandwidth estimator', choices=["dummy", "HRCC", "GCC", "Cubic", "PCC", "Copa", "Copa+", "BBR", "Gemini", "FARC", "Schaferct"])
 
 args = parser.parse_args()
 
