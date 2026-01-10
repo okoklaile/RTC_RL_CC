@@ -23,8 +23,8 @@ class NetInfo(object):
                 try:
                     raw_json = line[line.index('{'):]
                     json_network = json.loads(raw_json)
-                    # it seems no use
-                    del json_network["mediaInfo"]
+                    # Keep mediaInfo for freeze rate calculation
+                    # del json_network["mediaInfo"]
                     ret.append(json_network)
                 # can not parser json
                 except ValueError as e:

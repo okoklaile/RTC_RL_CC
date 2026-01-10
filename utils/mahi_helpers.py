@@ -33,10 +33,14 @@ def generate_mahimahi_command(config_path: str) -> str:
     
     link_shell = ""
     if 'link' in mahimahi_settings and mahimahi_settings['link'] is not None:
+        # 获取队列大小配置，默认使用 DEFAULT_QUEUE
+        queue_size = mahimahi_settings.get('queue', DEFAULT_QUEUE)
+        queue_args = f"--uplink-queue=droptail --uplink-queue-args='packets={queue_size}' "
+        
         if isinstance(mahimahi_settings['link'], str):
-            link_shell = f"mm-link {project_root}/traces/{mahimahi_settings['link']} {project_root}/traces/{mahimahi_settings['link']} "
+            link_shell = f"mm-link {project_root}/traces/{mahimahi_settings['link']} {project_root}/traces/{mahimahi_settings['link']} {queue_args}"
         if isinstance(mahimahi_settings['link'], list):
-            link_shell = f"mm-link {project_root}/traces/{mahimahi_settings['link'][0]} {project_root}/traces/{mahimahi_settings['link'][1]} "
+            link_shell = f"mm-link {project_root}/traces/{mahimahi_settings['link'][0]} {project_root}/traces/{mahimahi_settings['link'][1]} {queue_args}"
     
     command = delay_shell + loss_shell + link_shell
     command = command.strip()

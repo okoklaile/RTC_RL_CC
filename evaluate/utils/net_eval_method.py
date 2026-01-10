@@ -72,6 +72,7 @@ class NetEvalMethodNormal(NetEvalMethod):
                             100 * 0.2 * avg_recv_rate_score + \
                             100 * 0.3 * (1 - avg_loss_rate)
 
+        # Note: NetEvalMethodNormal returns a single score, not tuple like Extension
         return network_score
 
 
@@ -84,6 +85,12 @@ class NetEvalMethodExtension(NetEvalMethod):
     
     def eval(self, dst_net_info: NetInfo):
         net_data = dst_net_info.net_data
+        
+        # 处理空数据情况
+        if not net_data or len(net_data) == 0:
+            print(f"⚠️ net_data 为空，返回默认值")
+            return ({}, 0.0, 0.0, 0.0, 0.0, 0.0)
+        
         ssrc_info = {}
         time_nbytes = {}
 
@@ -143,7 +150,35 @@ class NetEvalMethodExtension(NetEvalMethod):
             self_inflicted_delay = [delay - min_delay for delay in ssrc_info[ssrc]["delay_list"]]
             all_self_inflicted_delays.extend(self_inflicted_delay)
             all_delay_pencentile_95.append(np.percentile(ssrc_info[ssrc]["delay_list"], 95))
-            
-            recv_rate_list = [ssrc_info[ssrc]["avg_recv_rate"]*8. /1000. for ssrc in ssrc_info if ssrc_info[ssrc]["avg_recv_rate"] > 0]
+        
+        # 计算接收速率列表（移到循环外部）
+        recv_rate_list = [ssrc_info[ssrc]["avg_recv_rate"]*8. /1000. for ssrc in ssrc_info if ssrc_info[ssrc]["avg_recv_rate"] > 0]
 
-        return (time_nbytes, np.mean(all_self_inflicted_delays), np.mean(all_delay_pencentile_95),  np.sum(recv_rate_list), loss_count / (loss_count + len(net_data)))
+        # 防止空列表导致 np.mean 返回 nan
+        mean_self_inflicted = np.mean(all_self_inflicted_delays) if all_self_inflicted_delays else 0.0
+        mean_delay_95 = np.mean(all_delay_pencentile_95) if all_delay_pencentile_95 else 0.0
+        sum_recv_rate = np.sum(recv_rate_list) if recv_rate_list else 0.0
+        
+        # 防止除零错误
+        total_packets = loss_count + len(net_data)
+        loss_ratio = loss_count / total_packets if total_packets > 0 else 0.0
+        
+        # 计算卡顿率（从最后一条有效数据中提取videoInfo）
+        freeze_rate = 0.0
+        try:
+            # 从后往前查找有效的 videoInfo 数据
+            for item in reversed(net_data):
+                if "mediaInfo" in item and "videoInfo" in item["mediaInfo"]:
+                    video_info = item["mediaInfo"]["videoInfo"]
+                    frames_dropped = video_info.get("framesDroped", 0)
+                    frames_received = video_info.get("framesReceived", 0)
+                    
+                    # 检查是否是有效数据（不是初始值 18446744073709551615）
+                    if frames_received < 18446744073709551615 and frames_received > 0:
+                        freeze_rate = frames_dropped / (frames_received + frames_dropped)
+                        break
+        except Exception as e:
+            print(f"⚠️ 计算卡顿率失败: {e}")
+            freeze_rate = 0.0
+        
+        return (time_nbytes, mean_self_inflicted, mean_delay_95, sum_recv_rate, loss_ratio, freeze_rate)
