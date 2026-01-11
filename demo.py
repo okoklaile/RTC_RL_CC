@@ -29,6 +29,36 @@ TRACE_FILES = {
     'trace_300k': ["trace_300k.up", "trace_300k.up"],
     'trace_example': ["trace_example.up", "trace_example.up"],
 }
+
+# 网络配置：delay(ms)单向延迟, queue为队列大小（数据包数量）
+# 队列设计原则：
+# - 低带宽场景：队列为BDP的10-15倍，允许拥塞控制探测
+# - 高带宽场景：队列为BDP的2-4倍，平衡吞吐量与延迟
+# - 长RTT场景：需要更大队列应对慢启动和探测
+TRACE_CONFIGS = {
+    # 有线网络 (RTT=10ms)
+    # BDP 计算：Bandwidth(bps) × RTT(s) / Packet_Size(bits)
+    # 队列设为 BDP 的 10-15 倍以应对探测和突发流量
+    'WIRED_200kbps': {'delay': 5, 'queue': 15},     # BDP≈0.17包 → 15包 (允许探测)
+    'WIRED_900kbps': {'delay': 5, 'queue': 20},     # BDP≈0.75包 → 20包 (允许探测)  
+    'WIRED_35mbps': {'delay': 5, 'queue': 70},      # BDP≈29包 → 70包 (2-3倍BDP)
+    
+    # 4G 网络 (RTT=40ms)
+    # 长 RTT 需要更大队列来应对慢启动和探测
+    '4G_500kbps': {'delay': 20, 'queue': 25},       # BDP≈1.67包 → 25包 (15倍BDP)
+    '4G_700kbps': {'delay': 20, 'queue': 30},       # BDP≈2.33包 → 30包 (13倍BDP)
+    '4G_3mbps': {'delay': 20, 'queue': 40},         # BDP≈10包 → 40包 (4倍BDP)
+    
+    # 5G 网络 (RTT=20ms)
+    # 高带宽场景，队列为 2.5-3 倍 BDP
+    '5G_12mbps': {'delay': 10, 'queue': 60},        # BDP≈20包 → 60包 (3倍BDP)
+    '5G_13mbps': {'delay': 10, 'queue': 65},        # BDP≈21.67包 → 65包 (3倍BDP)
+    
+    # 其他场景 (长 RTT + 低带宽，需要大队列)
+    'trace_300k': {'delay': 50, 'queue': 35},       # BDP≈2.5包 → 35包 (14倍BDP，RTT=100ms)
+    'trace_example': {'delay': 45, 'queue': 40},    # BDP≈3包 → 40包 (13倍BDP，RTT=90ms)
+}
+
 RESULTS = defaultdict(dict) # key: trace, value: dict of results
 ALGORITHMS = [
             #"dummy", 
@@ -63,26 +93,44 @@ def configure_env_file(algorithm: str, debug=False):
         print(f"Error: {e}")
         raise
 
-def configure_mahimahi_trace(tarce: str):
+def configure_mahimahi_trace(trace: str):
+    """
+    配置mahimahi的trace、delay和queue参数
+    
+    Args:
+        trace: trace名称
+    """
     try:
+        # 获取trace配置
+        config = TRACE_CONFIGS.get(trace, {'delay': 25, 'queue': 30})
+        
+        # 读取并更新配置文件
         with open("share/input/cases/trace/mahimahi.json", "r", encoding='utf-8') as tracef:
             trace_data = json.load(tracef)
-        trace_data["link"] = TRACE_FILES[tarce]
+        
+        # 更新配置
+        trace_data["link"] = TRACE_FILES[trace]
+        trace_data["delay"] = config['delay']  # 单向延迟（ms）
+        trace_data["queue"] = config['queue']  # 队列大小（数据包数量）
+        
+        # 保存配置
         with open("share/input/cases/trace/mahimahi.json", "w", encoding='utf-8') as tracef:
-            json.dump(trace_data, tracef)
+            json.dump(trace_data, tracef, indent=2)
+        
+        print(f"📝 配置 {trace}: delay={config['delay']}ms (RTT={2*config['delay']}ms), queue={config['queue']}包")
     
     except Exception as e:
         print(f"Error: {e}")
         raise
 
-def run_one_scenario(algorithm: str, trace: str, timeout=90):
+def run_one_scenario(algorithm: str, trace: str, timeout=65):
     """
     运行单个测试场景
     
     Args:
         algorithm: 算法名称
         trace: trace 名称
-        timeout: 超时时间（秒），默认 90 秒（根据 autoclose=60 + 30秒缓冲）
+        timeout: 超时时间（秒），默认 65 秒（根据 autoclose=60 + 5秒缓冲）
     """
     configure_env_file(algorithm)
     configure_mahimahi_trace(trace)
@@ -107,6 +155,66 @@ def run_one_scenario(algorithm: str, trace: str, timeout=90):
     command = ["docker", "compose", "down"]
     print(f"Finished: {algorithm}")
     subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
+def calculate_video_frame_loss_rate(net_parser: NetInfo):
+    """
+    计算视频帧的丢包率（参考 GCC 的 caculate_loss_rate 方法）
+    仅针对视频数据包（payload_type == 125）进行统计
+    
+    Args:
+        net_parser: NetInfo 对象，包含解析后的网络日志数据
+    
+    Returns:
+        video_loss_rate: 视频帧丢包率 (0.0-1.0)，如果无法计算则返回 -1
+    """
+    net_data = net_parser.net_data
+    
+    if not net_data or len(net_data) == 0:
+        return -1
+    
+    # 统计视频数据包（payload_type == 125）
+    video_packets = []
+    for item in net_data:
+        try:
+            payload_type = item["packetInfo"]["header"]["payloadType"]
+            sequence_number = item["packetInfo"]["header"]["sequenceNumber"]
+            
+            if payload_type == 125:  # 视频数据包
+                video_packets.append({
+                    "seq": sequence_number,
+                    "timestamp": item["packetInfo"]["arrivalTimeMs"]
+                })
+        except (KeyError, TypeError):
+            continue
+    
+    if len(video_packets) == 0:
+        return -1
+    
+    # 找到序列号范围
+    min_seq = video_packets[0]["seq"]
+    max_seq = video_packets[0]["seq"]
+    
+    for pkt in video_packets:
+        min_seq = min(min_seq, pkt["seq"])
+        max_seq = max(max_seq, pkt["seq"])
+    
+    # 序列号范围为 0 说明只有一个包，无法计算丢包率
+    if (max_seq - min_seq) == 0:
+        return -1
+    
+    # 计算接收率和丢包率
+    # 理论上应该收到的包数：(max_seq - min_seq + 1)
+    # 实际收到的包数：len(video_packets)
+    expected_packets = max_seq - min_seq + 1
+    received_packets = len(video_packets)
+    
+    # 接收率 = 实际收到 / 理论应该收到
+    receive_rate = received_packets / expected_packets
+    # 丢包率 = 1 - 接收率
+    video_loss_rate = 1 - receive_rate
+    
+    return video_loss_rate
 
 
 def evaluate_one_scenario(trace: str, run_idx: int):
@@ -164,6 +272,7 @@ def evaluate_one_scenario(trace: str, run_idx: int):
             RESULTS[trace][alg]["delay2"] = []
             RESULTS[trace][alg]["goodput"] = []
             RESULTS[trace][alg]["loss"] = []
+            RESULTS[trace][alg]["video_loss"] = []  # 视频帧丢包率
             RESULTS[trace][alg]["freeze_rate"] = []
             RESULTS[trace][alg]["network score"] = []
             RESULTS[trace][alg]["SSIM"] = []
@@ -177,6 +286,14 @@ def evaluate_one_scenario(trace: str, run_idx: int):
             RESULTS[trace][alg]["loss"].append(results[idx][4])
             RESULTS[trace][alg]["freeze_rate"].append(results[idx][5])
             RESULTS[trace][alg]["network score"].append(network_score(alg))
+            
+            # 计算视频帧丢包率（参考 GCC 方法）
+            try:
+                video_loss = calculate_video_frame_loss_rate(net_parsers[idx])
+                RESULTS[trace][alg]["video_loss"].append(video_loss if video_loss != -1 else 0.0)
+            except Exception as e:
+                print(f"⚠️ {alg} 视频帧丢包率计算失败: {e}")
+                RESULTS[trace][alg]["video_loss"].append(0.0)
             
             # SSIM 计算也可能失败（视频文件不存在）
             try:
@@ -192,6 +309,7 @@ def evaluate_one_scenario(trace: str, run_idx: int):
             RESULTS[trace][alg]["delay2"].append(0.0)
             RESULTS[trace][alg]["goodput"].append(0.0)
             RESULTS[trace][alg]["loss"].append(0.0)
+            RESULTS[trace][alg]["video_loss"].append(0.0)
             RESULTS[trace][alg]["freeze_rate"].append(0.0)
             RESULTS[trace][alg]["network score"].append(0.0)
             RESULTS[trace][alg]["SSIM"].append(0.0)
@@ -221,5 +339,5 @@ def visual_demo(json_file):
  
 if __name__ == '__main__':
 
-    demo(2)
+    demo(1)
     #visual_demo("share/output/trace/demo_results.json")

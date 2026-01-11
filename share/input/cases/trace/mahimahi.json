@@ -1,1 +1,8 @@
-{"link": ["4G_3mbps.up", "4G_3mbps.up"], "queue": 120}
+{
+  "link": [
+    "4G_500kbps.up",
+    "4G_500kbps.up"
+  ],
+  "delay": 20,
+  "queue": 25
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "scenario": "4G_3mbps",
+    "best_algorithm": "Gemini",
+    "custom_score": 56.74703054794958,
+    "goodput_avg": 1.6382255782209842,
+    "loss_avg": 0.014377301393035134,
+    "delay95_avg": 246.61666666666656,
+    "ssim_avg": 0.5829383670604702
+  },
+  {
+    "scenario": "4G_500kbps",
+    "best_algorithm": "FARC",
+    "custom_score": 56.48952204368892,
+    "goodput_avg": 0.13819182861909812,
+    "loss_avg": 0,
+    "delay95_avg": 182.67499999999978,
+    "ssim_avg": 0.5817808021506982
+  },
+  {
+    "scenario": "4G_700kbps",
+    "best_algorithm": "FARC",
+    "custom_score": 57.82270700103143,
+    "goodput_avg": 0.13893021717342033,
+    "loss_avg": 0,
+    "delay95_avg": 63.162499999999966,
+    "ssim_avg": 0.5831540178385801
+  },
+  {
+    "scenario": "5G_12mbps",
+    "best_algorithm": "BBR",
+    "custom_score": 80.15471364308725,
+    "goodput_avg": 24.44404539152392,
+    "loss_avg": 0.0006825843449774217,
+    "delay95_avg": 81.65,
+    "ssim_avg": 0.565612974688122
+  },
+  {
+    "scenario": "5G_13mbps",
+    "best_algorithm": "BBR",
+    "custom_score": 67.19877846654094,
+    "goodput_avg": 11.460257591036179,
+    "loss_avg": 0.00017691821005484708,
+    "delay95_avg": 92.02499999999999,
+    "ssim_avg": 0.5666761678600751
+  },
+  {
+    "scenario": "WIRED_200kbps",
+    "best_algorithm": "GCC",
+    "custom_score": 50.51067477632179,
+    "goodput_avg": 0.23088973145417208,
+    "loss_avg": 0.0020882362719963914,
+    "delay95_avg": 782.2916666666666,
+    "ssim_avg": 0.582071135251341
+  },
+  {
+    "scenario": "WIRED_35mbps",
+    "best_algorithm": "BBR",
+    "custom_score": 60.62995819073914,
+    "goodput_avg": 4.300176652297116,
+    "loss_avg": 0.0020489404051047887,
+    "delay95_avg": 15.166666666666666,
+    "ssim_avg": 0.5658389522536392
+  },
+  {
+    "scenario": "WIRED_900kbps",
+    "best_algorithm": "FARC",
+    "custom_score": 58.30759888175853,
+    "goodput_avg": 0.16444694648434802,
+    "loss_avg": 0,
+    "delay95_avg": 11.0,
+    "ssim_avg": 0.5825315193527418
+  },
+  {
+    "scenario": "trace_300k",
+    "best_algorithm": "FARC",
+    "custom_score": 51.81095467437016,
+    "goodput_avg": 0.1381610786659751,
+    "loss_avg": 0,
+    "delay95_avg": 642.6874999999994,
+    "ssim_avg": 0.5809966859570418
+  },
+  {
+    "scenario": "trace_example",
+    "best_algorithm": "Gemini",
+    "custom_score": 45.945142413929545,
+    "goodput_avg": 0.17980257374760863,
+    "loss_avg": 0.020875716168829696,
+    "delay95_avg": 1143.5416666666665,
+    "ssim_avg": 0.5824454231529008
+  }
+]
